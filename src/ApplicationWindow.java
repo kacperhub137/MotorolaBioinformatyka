@@ -32,11 +32,14 @@ public class ApplicationWindow extends JFrame {
             //label2.setText("+2: " + displacementTwo.substring(1).replaceAll("(.{" + 3 + "})", "$1 ").trim());
             //label3.setText("+3: " + displacementThree.substring(2).replaceAll("(.{" + 3 + "})", "$1 ").trim());
 
-
+            String firstSequence = "AAAUGAACGAAAAUCUGUUCGCUUCAUUCAUUGCCCCCACAAUCCUAGGCCUAC";
+            String secondSequence = "AUGAACGAAAAUCUGUUCGCUUCAUUCAUUGCCCCCACAAUCCUAGGCCUACCC";
+            //String one = firstSequence.trim();
+            //String two = secondSequence.trim();
             String proteinSequence = "";
 
-            for (int i = 0; i < displacementOne.length(); i += 3) {
-                String currentCodon = displacementOne.substring(i, i + 3);
+            for (int i = 0; i < secondSequence.length(); i += 3) {
+                String currentCodon = secondSequence.substring(i, i + 3);
                 switch (currentCodon) {
                     case "UUU":
                     case "UUC":
@@ -134,7 +137,7 @@ public class ApplicationWindow extends JFrame {
                         proteinSequence += "R";
                         break;
                     default:
-                        proteinSequence = "error";
+                        //proteinSequence = "error";
                 };
             }
             label4.setText(proteinSequence);
