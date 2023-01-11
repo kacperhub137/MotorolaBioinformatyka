@@ -6,44 +6,48 @@ public class ApplicationWindow extends JFrame {
     private JPanel panelMain;
     private JTextField textField;
     private JButton button;
-    private JLabel label1;
-    private JLabel label2;
-    private JLabel label3;
-    private JLabel label4;
+    public JLabel label1;
+    public JLabel label2;
+    public JLabel label3;
 
+    private static boolean isDNA(StringBuilder str)
+    {
+        for(int i=0;i<str.length();i++)
+        {
+            if(str.charAt(i) != 'A' && str.charAt(i) != 'G' && str.charAt(i) != 'T' && str.charAt(i) != 'C')
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 
-    public ApplicationWindow() {
-    button.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent actionEvent) {
-            //JOptionPane.showMessageDialog(button, textField.getText());
+    private static boolean isRNA(StringBuilder str)
+    {
+        for(int i=0;i<str.length();i++)
+        {
+            if(str.charAt(i) != 'A' && str.charAt(i) != 'G' && str.charAt(i) != 'U' && str.charAt(i) != 'C')
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    public static boolean checkInput(StringBuilder str)
+    {
+        return isDNA(str) || isRNA(str);
+    }
 
-            String displacementOne = textField.getText();
-            String displacementTwo = textField.getText();
-            String displacementThree = textField.getText();
-            displacementOne.trim();
-            displacementTwo.trim();
-            displacementThree.trim();
-            displacementOne.toUpperCase();
-            displacementTwo.toUpperCase();
-            displacementThree.toUpperCase();
-
-            //label1.setText("+1: " + displacementOne.replaceAll("(.{" + 3 + "})", "$1 ").trim());
-            //label2.setText("+2: " + displacementTwo.substring(1).replaceAll("(.{" + 3 + "})", "$1 ").trim());
-            //label3.setText("+3: " + displacementThree.substring(2).replaceAll("(.{" + 3 + "})", "$1 ").trim());
-
-            String firstSequence = "AAAUGAACGAAAAUCUGUUCGCUUCAUUCAUUGCCCCCACAAUCCUAGGCCUAC";
-            String secondSequence = "AUGAACGAAAAUCUGUUCGCUUCAUUCAUUGCCCCCACAAUCCUAGGCCUACCC";
-            //String one = firstSequence.trim();
-            //String two = secondSequence.trim();
-            String proteinSequence = "";
-
-            for (int i = 0; i < secondSequence.length(); i += 3) {
-                String currentCodon = secondSequence.substring(i, i + 3);
+    public void swapCodonsToAminoAcids(StringBuilder str)
+    {
+        StringBuilder proteinSequence = new StringBuilder();
+        for (int j = 0; j < 3; j++) {
+            for (int i = j; i < str.length() - 2; i += 3) {
+                String currentCodon = str.substring(i, i + 3);
                 switch (currentCodon) {
                     case "UUU":
                     case "UUC":
-                        proteinSequence += "F";
+                        proteinSequence.append("F");
                         break;
                     case "UUA":
                     case "UUG":
@@ -51,21 +55,27 @@ public class ApplicationWindow extends JFrame {
                     case "CUC":
                     case "CUA":
                     case "CUG":
-                        proteinSequence += "L";
+                        proteinSequence.append("L");
+                        break;
+                    case "GGA":
+                    case "GGC":
+                    case "GGG":
+                    case "GGU":
+                        proteinSequence.append("G");
                         break;
                     case "AUU":
                     case "AUC":
                     case "AUA":
-                        proteinSequence += "I";
+                        proteinSequence.append("I");
                         break;
                     case "AUG":
-                        proteinSequence += "M";
+                        proteinSequence.append("M");
                         break;
                     case "GUU":
                     case "GUC":
                     case "GUA":
                     case "GUG":
-                        proteinSequence += "V";
+                        proteinSequence.append("V");
                         break;
                     case "UCU":
                     case "UCC":
@@ -73,60 +83,60 @@ public class ApplicationWindow extends JFrame {
                     case "UCG":
                     case "AGU":
                     case "AGC":
-                        proteinSequence += "S";
+                        proteinSequence.append("S");
                         break;
                     case "CCU":
                     case "CCC":
                     case "CCA":
                     case "CCG":
-                        proteinSequence += "P";
+                        proteinSequence.append("P");
                         break;
                     case "ACU":
                     case "ACC":
                     case "ACA":
                     case "ACG":
-                        proteinSequence += "T";
+                        proteinSequence.append("T");
                         break;
                     case "GCU":
                     case "GCC":
                     case "GCA":
                     case "GCG":
-                        proteinSequence += "A";
+                        proteinSequence.append("A");
                         break;
                     case "UAU":
                     case "UAC":
-                        proteinSequence += "Y";
+                        proteinSequence.append("Y");
                         break;
                     case "CAU":
                     case "CAC":
-                        proteinSequence += "H";
+                        proteinSequence.append("H");
                         break;
                     case "CAA":
                     case "CAG":
-                        proteinSequence += "Q";
+                        proteinSequence.append("Q");
                         break;
                     case "AAU":
                     case "AAC":
-                        proteinSequence += "N";
+                        proteinSequence.append("N");
                         break;
                     case "AAA":
                     case "AAG":
-                        proteinSequence += "K";
+                        proteinSequence.append("K");
                         break;
                     case "GAU":
                     case "GAC":
-                        proteinSequence += "D";
+                        proteinSequence.append("D");
                         break;
                     case "GAA":
                     case "GAG":
-                        proteinSequence += "E";
+                        proteinSequence.append("E");
                         break;
                     case "UGU":
                     case "UGC":
-                        proteinSequence += "C";
+                        proteinSequence.append("C");
                         break;
                     case "UGG":
-                        proteinSequence += "W";
+                        proteinSequence.append("W");
                         break;
                     case "CGU":
                     case "CGC":
@@ -134,13 +144,36 @@ public class ApplicationWindow extends JFrame {
                     case "CGG":
                     case "AGA":
                     case "AGG":
-                        proteinSequence += "R";
+                        proteinSequence.append("R");
                         break;
-                    default:
-                        //proteinSequence = "error";
-                };
+                    case "UAA":
+                    case "UAG":
+                    case "UGA":
+                        proteinSequence.append("-");
+                        break;
+                }
             }
-            label4.setText(proteinSequence);
+            if (j == 0)
+                label1.setText("1:   "+ proteinSequence);
+            if (j == 1)
+                label2.setText("2:   "+ proteinSequence);
+            if (j == 2)
+                label3.setText("3:   "+ proteinSequence);
+            proteinSequence.setLength(0);
+        }
+    }
+
+    public ApplicationWindow() {
+    button.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent actionEvent) {
+            StringBuilder sequence = new StringBuilder(textField.getText().trim().toUpperCase());
+            if(!checkInput(sequence))
+            {
+                JOptionPane.showMessageDialog(null, "Niepoprawna sekwencja", "Blad" , JOptionPane.INFORMATION_MESSAGE);
+            }else {
+                swapCodonsToAminoAcids(sequence);
+            }
         }
     });
 }
