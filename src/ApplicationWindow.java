@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ApplicationWindow extends JFrame {
     private JPanel panelMain;
@@ -9,6 +11,8 @@ public class ApplicationWindow extends JFrame {
     public JLabel label1;
     public JLabel label2;
     public JLabel label3;
+    private JLabel label4;
+    private JLabel label5;
 
     private static boolean isDNA(StringBuilder str)
     {
@@ -162,6 +166,26 @@ public class ApplicationWindow extends JFrame {
             proteinSequence.setLength(0);
         }
     }
+    public void findStartAndEndOfSequence(StringBuilder str){
+        Pattern startCodon = Pattern.compile("AUG");
+        Pattern stopCodon = Pattern.compile("UGA|UAA|UAG");
+        Matcher startMatcher = startCodon.matcher(str);
+        Matcher stopMatcher = stopCodon.matcher(str);
+
+        if (startMatcher.find()) {
+            int start = startMatcher.start();
+            label5.setText("Start codon found at position " + start);
+        } else {
+            label5.setText("Start codon not found");
+        }
+        if (stopMatcher.find()) {
+            int end = stopMatcher.start();
+            label4.setText("Stop codon found at position " + end);
+        } else {
+            label4.setText("Stop codon not found");
+        }
+    }
+
 
     public ApplicationWindow() {
     button.addActionListener(new ActionListener() {
@@ -174,6 +198,7 @@ public class ApplicationWindow extends JFrame {
             }else {
                 swapCodonsToAminoAcids(sequence);
             }
+            findStartAndEndOfSequence(sequence);
         }
     });
 }
@@ -184,6 +209,6 @@ public class ApplicationWindow extends JFrame {
         applicationWindow.setVisible(true);
         applicationWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        applicationWindow.setSize(300,400);
+        applicationWindow.setSize(800,1000);
     }
 }
