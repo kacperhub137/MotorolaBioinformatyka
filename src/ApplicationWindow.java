@@ -1,6 +1,9 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -13,18 +16,6 @@ public class ApplicationWindow extends JFrame {
     public JLabel label3;
     private JLabel label4;
     private JLabel label5;
-
-    private static boolean isDNA(StringBuilder str)
-    {
-        for(int i=0;i<str.length();i++)
-        {
-            if(str.charAt(i) != 'A' && str.charAt(i) != 'G' && str.charAt(i) != 'T' && str.charAt(i) != 'C')
-            {
-                return false;
-            }
-        }
-        return true;
-    }
 
     private static boolean isRNA(StringBuilder str)
     {
@@ -39,10 +30,16 @@ public class ApplicationWindow extends JFrame {
     }
     public static boolean checkInput(StringBuilder str)
     {
-        return isDNA(str) || isRNA(str);
+
+        if(!isRNA(str))
+        {
+            JOptionPane.showMessageDialog(null, "Niepoprawna sekwencja", "Blad" , JOptionPane.INFORMATION_MESSAGE);
+            return false;
+        }
+        return true;
     }
 
-    public void swapCodonsToAminoAcids(StringBuilder str)
+    public void swapCodonsToAminoAcids(StringBuilder[] aminoAcids_sequence,StringBuilder str)
     {
         StringBuilder proteinSequence = new StringBuilder();
         for (int j = 0; j < 3; j++) {
@@ -163,9 +160,11 @@ public class ApplicationWindow extends JFrame {
                 label2.setText("2:   "+ proteinSequence);
             if (j == 2)
                 label3.setText("3:   "+ proteinSequence);
+            aminoAcids_sequence[j] = new StringBuilder(proteinSequence);
             proteinSequence.setLength(0);
         }
     }
+
     public void findStartAndEndOfSequence(StringBuilder str){
         Pattern startCodon = Pattern.compile("AUG");
         Pattern stopCodon = Pattern.compile("UGA|UAA|UAG");
@@ -191,12 +190,11 @@ public class ApplicationWindow extends JFrame {
     button.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent actionEvent) {
-            StringBuilder sequence = new StringBuilder(textField.getText().trim().toUpperCase());
-            if(!checkInput(sequence))
+            StringBuilder sequence = new StringBuilder(textField.getText().trim().toUpperCase().replace("T","U"));
+            StringBuilder[] aminoAcids_sequence = new StringBuilder[3];
+            if(checkInput(sequence))
             {
-                JOptionPane.showMessageDialog(null, "Niepoprawna sekwencja", "Blad" , JOptionPane.INFORMATION_MESSAGE);
-            }else {
-                swapCodonsToAminoAcids(sequence);
+                swapCodonsToAminoAcids(aminoAcids_sequence, sequence);
             }
             findStartAndEndOfSequence(sequence);
         }
