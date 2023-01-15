@@ -35,117 +35,32 @@ public class ApplicationWindow extends JFrame {
     }
     public void swapCodonsToAminoAcids(StringBuilder[] aminoAcids_sequence,StringBuilder str)
     {
+        String[] CODONS = {
+                "UUU", "UUC", "UUA", "UUG", "UCU",
+                "UCC", "UCA", "UCG", "UAU", "UAC", "UGU", "UGC", "UGG", "CUU",
+                "CUC", "CUA", "CUG", "CCU", "CCC", "CCA", "CCG", "CAU", "CAC",
+                "CAA", "CAG", "CGU", "CGC", "CGA", "CGG", "AUU", "AUC", "AUA",
+                "AUG", "ACU", "ACC", "ACA", "ACG", "AAU", "AAC", "AAA", "AAG",
+                "AGU", "AGC", "AGA", "AGG", "GUU", "GUC", "GUA", "GUG", "GCU",
+                "GCC", "GCA", "GCG", "GAU", "GAC", "GAA", "GAG", "GGU", "GGC",
+                "GGA", "GGG", "UGA" , "UAG" , "UAA"};
+
+        String[] AMINOS_PER_CODON = {
+                "F", "F", "L", "L", "S", "S",
+                "S", "S", "Y", "Y", "C", "C", "W", "L", "L", "L", "L", "P", "P",
+                "P", "P", "H", "H", "Q", "Q", "R", "R", "R", "R", "I", "I", "I",
+                "M", "T", "T", "T", "T", "N", "N", "K", "K", "S", "S", "R", "R",
+                "V", "V", "V", "V", "A", "A", "A", "A", "D", "D", "E", "E", "G",
+                "G", "G", "G", "-" , "-", "-"};
+
         StringBuilder proteinSequence = new StringBuilder();
         for (int j = 0; j < 3; j++) {
             for (int i = j; i < str.length() - 2; i += 3) {
                 String currentCodon = str.substring(i, i + 3);
-                switch (currentCodon) {
-                    case "UUU":
-                    case "UUC":
-                        proteinSequence.append("F");
-                        break;
-                    case "UUA":
-                    case "UUG":
-                    case "CUU":
-                    case "CUC":
-                    case "CUA":
-                    case "CUG":
-                        proteinSequence.append("L");
-                        break;
-                    case "GGA":
-                    case "GGC":
-                    case "GGG":
-                    case "GGU":
-                        proteinSequence.append("G");
-                        break;
-                    case "AUU":
-                    case "AUC":
-                    case "AUA":
-                        proteinSequence.append("I");
-                        break;
-                    case "AUG":
-                        proteinSequence.append("M");
-                        break;
-                    case "GUU":
-                    case "GUC":
-                    case "GUA":
-                    case "GUG":
-                        proteinSequence.append("V");
-                        break;
-                    case "UCU":
-                    case "UCC":
-                    case "UCA":
-                    case "UCG":
-                    case "AGU":
-                    case "AGC":
-                        proteinSequence.append("S");
-                        break;
-                    case "CCU":
-                    case "CCC":
-                    case "CCA":
-                    case "CCG":
-                        proteinSequence.append("P");
-                        break;
-                    case "ACU":
-                    case "ACC":
-                    case "ACA":
-                    case "ACG":
-                        proteinSequence.append("T");
-                        break;
-                    case "GCU":
-                    case "GCC":
-                    case "GCA":
-                    case "GCG":
-                        proteinSequence.append("A");
-                        break;
-                    case "UAU":
-                    case "UAC":
-                        proteinSequence.append("Y");
-                        break;
-                    case "CAU":
-                    case "CAC":
-                        proteinSequence.append("H");
-                        break;
-                    case "CAA":
-                    case "CAG":
-                        proteinSequence.append("Q");
-                        break;
-                    case "AAU":
-                    case "AAC":
-                        proteinSequence.append("N");
-                        break;
-                    case "AAA":
-                    case "AAG":
-                        proteinSequence.append("K");
-                        break;
-                    case "GAU":
-                    case "GAC":
-                        proteinSequence.append("D");
-                        break;
-                    case "GAA":
-                    case "GAG":
-                        proteinSequence.append("E");
-                        break;
-                    case "UGU":
-                    case "UGC":
-                        proteinSequence.append("C");
-                        break;
-                    case "UGG":
-                        proteinSequence.append("W");
-                        break;
-                    case "CGU":
-                    case "CGC":
-                    case "CGA":
-                    case "CGG":
-                    case "AGA":
-                    case "AGG":
-                        proteinSequence.append("R");
-                        break;
-                    case "UAA":
-                    case "UAG":
-                    case "UGA":
-                        proteinSequence.append("-");
-                        break;
+                for (int k = 0; k < CODONS.length; k++) {
+                    if (CODONS[k].equals(currentCodon)) {
+                        proteinSequence.append(AMINOS_PER_CODON[k]);
+                    }
                 }
             }
             aminoAcids_sequence[j] = new StringBuilder(proteinSequence);
@@ -178,11 +93,15 @@ public class ApplicationWindow extends JFrame {
         public void actionPerformed(ActionEvent actionEvent) {
             StringBuilder sequence = new StringBuilder(textField.getText().trim().toUpperCase().replace("T","U"));
             StringBuilder[] aminoAcids_sequence = new StringBuilder[3];
+            ArrayList<Protein> Proteins = new ArrayList<>();
             if(checkInput(sequence))
             {
                 swapCodonsToAminoAcids(aminoAcids_sequence, sequence);
             }
-            findStartAndEndOfSequence(sequence);
+            findStartAndEndOfSequence(aminoAcids_sequence,Proteins);
+            for(int i=0;i<Proteins.size();i++){
+                JOptionPane.showMessageDialog(null, Proteins.get(i).sequence, "Blad" , JOptionPane.INFORMATION_MESSAGE);
+            }
         }
     });
 }
