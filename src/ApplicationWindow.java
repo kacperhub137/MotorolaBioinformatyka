@@ -11,11 +11,6 @@ public class ApplicationWindow extends JFrame {
     private JPanel panelMain;
     private JTextField textField;
     private JButton button;
-    public JLabel label1;
-    public JLabel label2;
-    public JLabel label3;
-    private JLabel label4;
-    private JLabel label5;
 
     private static boolean isRNA(StringBuilder str)
     {
@@ -38,7 +33,6 @@ public class ApplicationWindow extends JFrame {
         }
         return true;
     }
-
     public void swapCodonsToAminoAcids(StringBuilder[] aminoAcids_sequence,StringBuilder str)
     {
         StringBuilder proteinSequence = new StringBuilder();
@@ -154,38 +148,30 @@ public class ApplicationWindow extends JFrame {
                         break;
                 }
             }
-            if (j == 0)
-                label1.setText("1:   "+ proteinSequence);
-            if (j == 1)
-                label2.setText("2:   "+ proteinSequence);
-            if (j == 2)
-                label3.setText("3:   "+ proteinSequence);
             aminoAcids_sequence[j] = new StringBuilder(proteinSequence);
             proteinSequence.setLength(0);
         }
     }
 
-    public void findStartAndEndOfSequence(StringBuilder str){
-        Pattern startCodon = Pattern.compile("AUG");
-        Pattern stopCodon = Pattern.compile("UGA|UAA|UAG");
-        Matcher startMatcher = startCodon.matcher(str);
-        Matcher stopMatcher = stopCodon.matcher(str);
-
-        if (startMatcher.find()) {
-            int start = startMatcher.start();
-            label5.setText("Start codon found at position " + start);
-        } else {
-            label5.setText("Start codon not found");
-        }
-        if (stopMatcher.find()) {
-            int end = stopMatcher.start();
-            label4.setText("Stop codon found at position " + end);
-        } else {
-            label4.setText("Stop codon not found");
+    public void findStartAndEndOfSequence(StringBuilder[] aminoAcid_sequence,ArrayList<Protein> Proteins) {
+        StringBuilder proteinSequence = new StringBuilder();
+        for (int i = 0; i < 3; i++) {
+            boolean isProtein = false;
+            for (int j = 0; j < aminoAcid_sequence[i].length(); j++) {
+                if (aminoAcid_sequence[i].substring(j, j + 1).equals("M")) {
+                    isProtein = true;
+                }
+                if (aminoAcid_sequence[i].substring(j, j + 1).equals("-") && isProtein) {
+                    isProtein = false;
+                    Proteins.add(new Protein(proteinSequence));
+                    proteinSequence = new StringBuilder();
+                }
+                if (isProtein) {
+                    proteinSequence.append(aminoAcid_sequence[i].substring(j, j + 1));
+                }
+            }
         }
     }
-
-
     public ApplicationWindow() {
     button.addActionListener(new ActionListener() {
         @Override
@@ -206,7 +192,6 @@ public class ApplicationWindow extends JFrame {
         applicationWindow.setContentPane(applicationWindow.panelMain);
         applicationWindow.setVisible(true);
         applicationWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
         applicationWindow.setSize(800,1000);
     }
 }
