@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="Odczyt kodu genetycznego zakończony">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-15_19_27_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-15_19_27__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Protein.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-12_12_05_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-12_12_05__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-15_19_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-15_19_27__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Protein.java" afterDir="false" />
     </list>
-    <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.java" afterDir="false" />
-    </list>
+    <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,22 +33,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/ApplicationWindow.java">
-      <ranges>
-        <range start1="13" end1="18" start2="13" end2="13" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
-        <range start1="40" end1="41" start2="35" end2="35" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
-        <range start1="43" end1="43" start2="37" end2="55" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
-        <range start1="47" end1="154" start2="59" end2="63" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
-        <range start1="156" end1="162" start2="65" end2="65" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
-        <range start1="167" end1="184" start2="70" end2="87" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
-        <range start1="186" end1="188" start2="89" end2="89" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
-        <range start1="194" end1="194" start2="95" end2="96" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
-        <range start1="198" end1="199" start2="100" end2="104" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
-        <range start1="208" end1="209" start2="113" end2="113" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,6 +54,15 @@
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;324&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ApplicationWindow" />
+      <module name="MotorolaBioinformatyka" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -106,5 +97,16 @@
     <MESSAGE value="New version clean" />
     <MESSAGE value="Odczyt kodu genetycznego zakończony" />
     <option name="LAST_COMMIT_MESSAGE" value="Odczyt kodu genetycznego zakończony" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Protein.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

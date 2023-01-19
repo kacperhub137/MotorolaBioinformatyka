@@ -15,7 +15,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="AAAUGAACGAAAAUCUGUUCGCUUCAUUCAUUGCCCCCACAAUCCUAGGCCUACCC"/>
+          <text value="AUGAAAUAA"/>
         </properties>
       </component>
       <component id="216ad" class="javax.swing.JLabel">

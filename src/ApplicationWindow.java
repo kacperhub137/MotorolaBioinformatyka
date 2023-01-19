@@ -12,6 +12,8 @@ public class ApplicationWindow extends JFrame {
     private JTextField textField;
     private JButton button;
 
+    public static ApplicationWindow window;
+
     private static boolean isRNA(StringBuilder str)
     {
         for(int i=0;i<str.length();i++)
@@ -87,7 +89,9 @@ public class ApplicationWindow extends JFrame {
             }
         }
     }
+
     public ApplicationWindow() {
+        window = this;
     button.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent actionEvent) {
@@ -99,9 +103,12 @@ public class ApplicationWindow extends JFrame {
                 swapCodonsToAminoAcids(aminoAcids_sequence, sequence);
             }
             findStartAndEndOfSequence(aminoAcids_sequence,Proteins);
-            for(int i=0;i<Proteins.size();i++){
-                JOptionPane.showMessageDialog(null, Proteins.get(i).sequence, "Blad" , JOptionPane.INFORMATION_MESSAGE);
+            for(int i=0;i<Proteins.size();i++) {
+                JOptionPane.showMessageDialog(null, Proteins.get(i).sequence, "Blad", JOptionPane.INFORMATION_MESSAGE);
+
+
             }
+            Proteins.get(0).drawPeptideChain();
         }
     });
 }
