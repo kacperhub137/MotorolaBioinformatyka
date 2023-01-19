@@ -9,15 +9,12 @@ public class Protein{
     }
 
     public void drawPeptideChain() {
-        /*JLabel structure[] = new JLabel[sequence.length() * 2 + 1];
-        for (int i = 0; i < structure.length; i++) {
-            structure[i] = new JLabel("");
-
-        }*/
-        JLabel structure = new JLabel("wwww");
-        structure.setIcon(new ImageIcon("C:\\Users\\egzaminInf03_202301\\IdeaProjects\\MotorolaBioinformatyka\\Images\\AminaAcidsChains\\Start.png"));
-        ApplicationWindow.window.getContentPane().add(structure);
-
+        JPanel peptide = new JPanel();
+        JLabel structure = new JLabel();
+        peptide.add(structure);
+        structure.setIcon(new ImageIcon("Images/AminaAcidsChains/Start.png"));
+        ApplicationWindow.window.getContentPane().add(peptide);
+        ApplicationWindow.window.setVisible(true);
     }
 
 }

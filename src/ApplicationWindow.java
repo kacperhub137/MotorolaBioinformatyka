@@ -103,12 +103,11 @@ public class ApplicationWindow extends JFrame {
                 swapCodonsToAminoAcids(aminoAcids_sequence, sequence);
             }
             findStartAndEndOfSequence(aminoAcids_sequence,Proteins);
-            for(int i=0;i<Proteins.size();i++) {
-                JOptionPane.showMessageDialog(null, Proteins.get(i).sequence, "Blad", JOptionPane.INFORMATION_MESSAGE);
-
-
-            }
             Proteins.get(0).drawPeptideChain();
+            /*setMinimumSize(getSize());
+            pack();
+            setMinimumSize(null);*/
+            //repaint();
         }
     });
 }
