@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="Odczyt kodu genetycznego zakończony">
+    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Protein.java" afterDir="false" />
     </list>
     <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="" />
@@ -83,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673295100228</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dzialajace zdjecie">
+      <created>1674162432924</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674162432924</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,6 +105,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New version clean" />
     <MESSAGE value="Odczyt kodu genetycznego zakończony" />
-    <option name="LAST_COMMIT_MESSAGE" value="Odczyt kodu genetycznego zakończony" />
+    <MESSAGE value="Dzialajace zdjecie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dzialajace zdjecie" />
   </component>
 </project>
