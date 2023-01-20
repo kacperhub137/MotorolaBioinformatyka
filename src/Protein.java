@@ -52,6 +52,7 @@ public class Protein{
     {
         JLabel aminoAcidImage = new JLabel();
         peptide.add(aminoAcidImage);
+        aminoAcidImage.setBounds(10,10,50,20);
         aminoAcidImage.setIcon(new ImageIcon("Images/AminaAcidsChains/" + aminoAcid +"up.png"));
     }
 
