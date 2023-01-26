@@ -73,6 +73,6 @@ public class Protein{
     {
         JLabel endImage = new JLabel();
         peptide.add(endImage);
-        endImage.setIcon(new ImageIcon("Images/AminaAcidsChains/0-.png"));
+        endImage.setIcon(new ImageIcon("Images/AminaAcidsChains/O-.png"));
     }
 }
