@@ -11,6 +11,7 @@ public class ApplicationWindow extends JFrame {
     private JPanel panelMain;
     private JTextField textField;
     private JButton button;
+    private JLabel text;
 
     public static ApplicationWindow window;
 

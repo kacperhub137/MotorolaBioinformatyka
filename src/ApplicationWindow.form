@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ApplicationWindow">
   <grid id="27dc6" binding="panelMain" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
     <constraints>
-      <xy x="22" y="9" width="747" height="311"/>
+      <xy x="22" y="9" width="747" height="628"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -13,7 +13,7 @@
           <text value="AUGAAAUAA"/>
         </properties>
       </component>
-      <component id="216ad" class="javax.swing.JLabel">
+      <component id="216ad" class="javax.swing.JLabel" binding="text">
         <constraints/>
         <properties>
           <text value="Enter:"/>

@@ -45,14 +45,14 @@ public class Protein{
     {
         JLabel aminoAcidImage = new JLabel();
         peptide.add(aminoAcidImage);
-        aminoAcidImage.setIcon(new ImageIcon("Images/AminaAcidsChains/" + aminoAcid +"down.png"));
+        aminoAcidImage.setIcon(new ImageIcon("Images/AminaAcidsChains/" + aminoAcid +"Down.png"));
     }
 
     private void addUpImage(char aminoAcid)
     {
         JLabel aminoAcidImage = new JLabel();
         peptide.add(aminoAcidImage);
-        aminoAcidImage.setIcon(new ImageIcon("Images/AminaAcidsChains/" + aminoAcid +"up.png"));
+        aminoAcidImage.setIcon(new ImageIcon("Images/AminaAcidsChains/" + aminoAcid +"Up.png"));
     }
 
     private void addNH()
@@ -73,6 +73,6 @@ public class Protein{
     {
         JLabel endImage = new JLabel();
         peptide.add(endImage);
-        endImage.setIcon(new ImageIcon("Images/AminaAcidsChains/O-.png"));
+        endImage.setIcon(new ImageIcon("Images/AminaAcidsChains/EndUp.png"));
     }
 }
