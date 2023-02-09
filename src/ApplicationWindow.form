@@ -7,6 +7,12 @@
     <properties/>
     <border type="none"/>
     <children>
+      <component id="b2ef4" class="javax.swing.JLabel" binding="aminoAcidMass">
+        <constraints/>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
       <component id="dfa36" class="javax.swing.JTextField" binding="textField">
         <constraints/>
         <properties>

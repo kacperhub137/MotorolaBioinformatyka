@@ -6,15 +6,38 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+import  java.util.HashMap;
 public class ApplicationWindow extends JFrame {
     private JPanel panelMain;
     private JTextField textField;
     private JButton button;
     private JLabel text;
-
+    private JLabel aminoAcidMass;
     public static ApplicationWindow window;
+    private static final HashMap<Character, Double> aminoAcidMasses = new HashMap<>();
 
+    static {
+        aminoAcidMasses.put('A', 89.0475);
+        aminoAcidMasses.put('C', 121.0196);
+        aminoAcidMasses.put('D', 133.0373);
+        aminoAcidMasses.put('E', 147.0529);
+        aminoAcidMasses.put('F', 165.0787);
+        aminoAcidMasses.put('G', 75.0319);
+        aminoAcidMasses.put('H', 155.0693);
+        aminoAcidMasses.put('I', 131.0943);
+        aminoAcidMasses.put('K', 146.1052);
+        aminoAcidMasses.put('L', 131.0943);
+        aminoAcidMasses.put('M', 149.0508);
+        aminoAcidMasses.put('N', 132.0533);
+        aminoAcidMasses.put('P', 115.0631);
+        aminoAcidMasses.put('Q', 146.0689);
+        aminoAcidMasses.put('R', 174.1114);
+        aminoAcidMasses.put('S', 105.0424);
+        aminoAcidMasses.put('T', 119.0580);
+        aminoAcidMasses.put('V', 117.0787);
+        aminoAcidMasses.put('W', 204.0896);
+        aminoAcidMasses.put('Y', 181.0736);
+    }
     private static boolean isRNA(StringBuilder str)
     {
         for(int i=0;i<str.length();i++)
@@ -28,7 +51,6 @@ public class ApplicationWindow extends JFrame {
     }
     public static boolean checkInput(StringBuilder str)
     {
-
         if(!isRNA(str))
         {
             JOptionPane.showMessageDialog(null, "Niepoprawna sekwencja", "Blad" , JOptionPane.INFORMATION_MESSAGE);
@@ -90,7 +112,14 @@ public class ApplicationWindow extends JFrame {
             }
         }
     }
-
+    public static double getAminoAcidsMass(StringBuilder[] aminoAcid_sequence){
+        double mass = 0.0;
+        for (int i = 0; i < aminoAcid_sequence[i].length(); i++) {
+            char aminoAcid = aminoAcid_sequence[i].charAt(i);
+            mass += aminoAcidMasses.getOrDefault(aminoAcid, 0.0);
+        }
+        return mass;
+    }
     public ApplicationWindow() {
         window = this;
     button.addActionListener(new ActionListener() {
@@ -104,11 +133,8 @@ public class ApplicationWindow extends JFrame {
                 swapCodonsToAminoAcids(aminoAcids_sequence, sequence);
             }
             findStartAndEndOfSequence(aminoAcids_sequence,Proteins);
+            aminoAcidMass.setText(String.valueOf(getAminoAcidsMass(aminoAcids_sequence)));
             Proteins.get(0).drawPeptideChain();
-            /*setMinimumSize(getSize());
-            pack();
-            setMinimumSize(null);*/
-            //repaint();
         }
     });
 }
