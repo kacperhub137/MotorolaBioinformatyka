@@ -4,42 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="Poprawa rysowania łańcucha">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-15_19_27_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-01-15_19_27__Changes_.xml" beforeDir="false" />
+    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="Img update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/0-.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/1200px-5-Hydroxy-L-Tryptophan_(5-HTP).svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/1200px-L-Phenylalanin_-_L-Phenylalanine.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/220px-Methionin_-_Methionine.svg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Alanine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Arginine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Aspartic Acid.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Cysteine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/End.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Glutamic Acid.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/HN.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/AminaAcidsChains/HN.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Histidine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Lysine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Mdown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Mup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/NH.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/AminaAcidsChains/NH.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/O-.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Proline.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Selenocysteine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Serine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Start.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/AminaAcidsChains/Start.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/Valine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/amino-acid-leucine-chemical-molecular-formula-of-amino-acid-leucine-vector-illustration-on-isolated-background-2F2YNKB.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/asparagine-is-an-amino-acid-chemical-molecular-formula-asparagine-is-amino-acid-vector-illustration-on-isolated-background-2E9YD39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/download.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/istockphoto-1310054870-170667a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/the-amino-acid-glutamine-amino-acid-glutamine-chemical-molecular-formula-vector-illustration-on-isolated-background-700-243628172.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/the-amino-acid-tyrosine-chemical-molecular-formula-of-tyrosine-amino-acid-vector-illustration-on-isolated-background-2F2YNE4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/threonine-is-an-amino-acid-chemical-molecular-formula-of-threonine-amino-acid-vector-illustration-on-isolated-background-2F2YNPC.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Protein.java" afterDir="false" />
     </list>
     <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +32,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -122,6 +91,8 @@
       <workItem from="1674844212078" duration="62000" />
       <workItem from="1674844538127" duration="5667000" />
       <workItem from="1674902937609" duration="8298000" />
+      <workItem from="1675117340537" duration="192000" />
+      <workItem from="1675538915203" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="New version clean">
       <created>1673295100228</created>
@@ -144,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674750494821</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Img update">
+      <created>1675117465482</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675117465482</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +144,7 @@
     <MESSAGE value="Odczyt kodu genetycznego zakończony" />
     <MESSAGE value="Dzialajace zdjecie" />
     <MESSAGE value="Poprawa rysowania łańcucha" />
-    <option name="LAST_COMMIT_MESSAGE" value="Poprawa rysowania łańcucha" />
+    <MESSAGE value="Img update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Img update" />
   </component>
 </project>
