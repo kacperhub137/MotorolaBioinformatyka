@@ -134,7 +134,8 @@ public class ApplicationWindow extends JFrame {
             }
             findStartAndEndOfSequence(aminoAcids_sequence,Proteins);
             aminoAcidMass.setText(String.valueOf(getAminoAcidsMass(aminoAcids_sequence)));
-            Proteins.get(0).drawPeptideChain();
+            window.getContentPane().add(Proteins.get(0).getImage());
+            window.setVisible(true);
         }
     });
 }

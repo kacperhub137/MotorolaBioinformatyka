@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="Img update">
+    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="refactoring pt.1">
+      <change afterPath="$PROJECT_DIR$/src/ProteinImage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Protein.java" afterDir="false" />
     </list>
     <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,6 +156,14 @@
     <MESSAGE value="Dzialajace zdjecie" />
     <MESSAGE value="Poprawa rysowania łańcucha" />
     <MESSAGE value="Img update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Img update" />
+    <MESSAGE value="refactoring pt.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring pt.1" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Protein" memberName="peptide" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
