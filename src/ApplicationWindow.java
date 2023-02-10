@@ -9,136 +9,17 @@ import java.util.regex.Pattern;
 import  java.util.HashMap;
 public class ApplicationWindow extends JFrame {
     private JPanel panelMain;
-    private JTextField textField;
-    private JButton button;
+    public JTextField textField;
+    protected JButton button;
     private JLabel text;
-    private JLabel aminoAcidMass;
+    protected JLabel aminoAcidMass;
     public static ApplicationWindow window;
-    private static final HashMap<Character, Double> aminoAcidMasses = new HashMap<>();
+    ActionListener listener = new RNAListener();
 
-    static {
-        aminoAcidMasses.put('A', 89.0475);
-        aminoAcidMasses.put('C', 121.0196);
-        aminoAcidMasses.put('D', 133.0373);
-        aminoAcidMasses.put('E', 147.0529);
-        aminoAcidMasses.put('F', 165.0787);
-        aminoAcidMasses.put('G', 75.0319);
-        aminoAcidMasses.put('H', 155.0693);
-        aminoAcidMasses.put('I', 131.0943);
-        aminoAcidMasses.put('K', 146.1052);
-        aminoAcidMasses.put('L', 131.0943);
-        aminoAcidMasses.put('M', 149.0508);
-        aminoAcidMasses.put('N', 132.0533);
-        aminoAcidMasses.put('P', 115.0631);
-        aminoAcidMasses.put('Q', 146.0689);
-        aminoAcidMasses.put('R', 174.1114);
-        aminoAcidMasses.put('S', 105.0424);
-        aminoAcidMasses.put('T', 119.0580);
-        aminoAcidMasses.put('V', 117.0787);
-        aminoAcidMasses.put('W', 204.0896);
-        aminoAcidMasses.put('Y', 181.0736);
-    }
-    private static boolean isRNA(StringBuilder str)
-    {
-        for(int i=0;i<str.length();i++)
-        {
-            if(str.charAt(i) != 'A' && str.charAt(i) != 'G' && str.charAt(i) != 'U' && str.charAt(i) != 'C')
-            {
-                return false;
-            }
-        }
-        return true;
-    }
-    public static boolean checkInput(StringBuilder str)
-    {
-        if(!isRNA(str))
-        {
-            JOptionPane.showMessageDialog(null, "Niepoprawna sekwencja", "Blad" , JOptionPane.INFORMATION_MESSAGE);
-            return false;
-        }
-        return true;
-    }
-    public void swapCodonsToAminoAcids(StringBuilder[] aminoAcids_sequence,StringBuilder str)
-    {
-        String[] CODONS = {
-                "UUU", "UUC", "UUA", "UUG", "UCU",
-                "UCC", "UCA", "UCG", "UAU", "UAC", "UGU", "UGC", "UGG", "CUU",
-                "CUC", "CUA", "CUG", "CCU", "CCC", "CCA", "CCG", "CAU", "CAC",
-                "CAA", "CAG", "CGU", "CGC", "CGA", "CGG", "AUU", "AUC", "AUA",
-                "AUG", "ACU", "ACC", "ACA", "ACG", "AAU", "AAC", "AAA", "AAG",
-                "AGU", "AGC", "AGA", "AGG", "GUU", "GUC", "GUA", "GUG", "GCU",
-                "GCC", "GCA", "GCG", "GAU", "GAC", "GAA", "GAG", "GGU", "GGC",
-                "GGA", "GGG", "UGA" , "UAG" , "UAA"};
-
-        String[] AMINOS_PER_CODON = {
-                "F", "F", "L", "L", "S", "S",
-                "S", "S", "Y", "Y", "C", "C", "W", "L", "L", "L", "L", "P", "P",
-                "P", "P", "H", "H", "Q", "Q", "R", "R", "R", "R", "I", "I", "I",
-                "M", "T", "T", "T", "T", "N", "N", "K", "K", "S", "S", "R", "R",
-                "V", "V", "V", "V", "A", "A", "A", "A", "D", "D", "E", "E", "G",
-                "G", "G", "G", "-" , "-", "-"};
-
-        StringBuilder proteinSequence = new StringBuilder();
-        for (int j = 0; j < 3; j++) {
-            for (int i = j; i < str.length() - 2; i += 3) {
-                String currentCodon = str.substring(i, i + 3);
-                for (int k = 0; k < CODONS.length; k++) {
-                    if (CODONS[k].equals(currentCodon)) {
-                        proteinSequence.append(AMINOS_PER_CODON[k]);
-                    }
-                }
-            }
-            aminoAcids_sequence[j] = new StringBuilder(proteinSequence);
-            proteinSequence.setLength(0);
-        }
-    }
-
-    public void findStartAndEndOfSequence(StringBuilder[] aminoAcid_sequence,ArrayList<Protein> Proteins) {
-        StringBuilder proteinSequence = new StringBuilder();
-        for (int i = 0; i < 3; i++) {
-            boolean isProtein = false;
-            for (int j = 0; j < aminoAcid_sequence[i].length(); j++) {
-                if (aminoAcid_sequence[i].substring(j, j + 1).equals("M")) {
-                    isProtein = true;
-                }
-                if (aminoAcid_sequence[i].substring(j, j + 1).equals("-") && isProtein) {
-                    isProtein = false;
-                    Proteins.add(new Protein(proteinSequence));
-                    proteinSequence = new StringBuilder();
-                }
-                if (isProtein) {
-                    proteinSequence.append(aminoAcid_sequence[i].substring(j, j + 1));
-                }
-            }
-        }
-    }
-    public static double getAminoAcidsMass(StringBuilder[] aminoAcid_sequence){
-        double mass = 0.0;
-        for (int i = 0; i < aminoAcid_sequence[i].length(); i++) {
-            char aminoAcid = aminoAcid_sequence[i].charAt(i);
-            mass += aminoAcidMasses.getOrDefault(aminoAcid, 0.0);
-        }
-        return mass;
-    }
     public ApplicationWindow() {
         window = this;
-    button.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent actionEvent) {
-            StringBuilder sequence = new StringBuilder(textField.getText().trim().toUpperCase().replace("T","U"));
-            StringBuilder[] aminoAcids_sequence = new StringBuilder[3];
-            ArrayList<Protein> Proteins = new ArrayList<>();
-            if(checkInput(sequence))
-            {
-                swapCodonsToAminoAcids(aminoAcids_sequence, sequence);
-            }
-            findStartAndEndOfSequence(aminoAcids_sequence,Proteins);
-            aminoAcidMass.setText(String.valueOf(getAminoAcidsMass(aminoAcids_sequence)));
-            window.getContentPane().add(Proteins.get(0).getImage());
-            window.setVisible(true);
-        }
-    });
-}
+        button.addActionListener(listener);
+    }
 
     public static void main(String[] args) {
         ApplicationWindow applicationWindow = new ApplicationWindow();
