@@ -4,9 +4,15 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class RNAListener implements ActionListener {
-
+    private final JTextField textField;
+    private final ApplicationWindow window;
+    public RNAListener(JTextField textField,ApplicationWindow window)
+    {
+        this.textField = textField;
+        this.window = window;
+    }
     public void actionPerformed(ActionEvent event) {
-        StringBuilder sequence = new StringBuilder(ApplicationWindow.window.textField.getText().trim().toUpperCase().replace("T","U"));
+        StringBuilder sequence = new StringBuilder(textField.getText().trim().toUpperCase().replace("T","U"));
         StringBuilder[] aminoAcids_sequence = new StringBuilder[3];
         ArrayList<Protein> Proteins = new ArrayList<>();
         if(checkInput(sequence))
@@ -17,11 +23,10 @@ public class RNAListener implements ActionListener {
             return;
         }
         findProteins(aminoAcids_sequence,Proteins);
-        ApplicationWindow.window.getContentPane().add(Proteins.get(0).getImage());
+        window.add(Proteins.get(0).getImage());
         System.out.println(Proteins.get(0).getMass());
-        ApplicationWindow.window.setVisible(true);
+        window.setVisible(true);
     }
-
     private static boolean isRNA(StringBuilder str)
     {
         for(int i=0;i<str.length();i++)
@@ -76,7 +81,6 @@ public class RNAListener implements ActionListener {
             proteinSequence.setLength(0);
         }
     }
-
     public void findProteins(StringBuilder[] aminoAcid_sequence,ArrayList<Protein> Proteins) {
         StringBuilder proteinSequence = new StringBuilder();
         for (int i = 0; i < 3; i++) {

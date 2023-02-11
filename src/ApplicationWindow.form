@@ -7,28 +7,28 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="b2ef4" class="javax.swing.JLabel" binding="aminoAcidMass">
-        <constraints/>
-        <properties>
-          <text value="Label"/>
-        </properties>
-      </component>
-      <component id="dfa36" class="javax.swing.JTextField" binding="textField">
-        <constraints/>
-        <properties>
-          <text value="AUGAAAUAA"/>
-        </properties>
-      </component>
-      <component id="216ad" class="javax.swing.JLabel" binding="text">
+      <component id="216ad" class="javax.swing.JLabel" binding="enterText">
         <constraints/>
         <properties>
           <text value="Enter:"/>
         </properties>
       </component>
-      <component id="1b751" class="javax.swing.JButton" binding="button">
+      <component id="dfa36" class="javax.swing.JTextField" binding="RNATextField">
         <constraints/>
         <properties>
-          <text value="Button"/>
+          <text value="AUGAAAUAA"/>
+        </properties>
+      </component>
+      <component id="8ea26" class="javax.swing.JButton" binding="openFileButton">
+        <constraints/>
+        <properties>
+          <text value="Wczytaj z pliku"/>
+        </properties>
+      </component>
+      <component id="1b751" class="javax.swing.JButton" binding="mainButton">
+        <constraints/>
+        <properties>
+          <text value="Znajdz proteiny"/>
         </properties>
       </component>
     </children>

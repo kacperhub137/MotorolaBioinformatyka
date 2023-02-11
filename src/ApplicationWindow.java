@@ -1,26 +1,19 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import  java.util.HashMap;
+import javax.swing.filechooser.FileNameExtensionFilter;
+
 public class ApplicationWindow extends JFrame {
     private JPanel panelMain;
-    public JTextField textField;
-    protected JButton button;
-    private JLabel text;
-    protected JLabel aminoAcidMass;
-    public static ApplicationWindow window;
-    ActionListener listener = new RNAListener();
-
+    private JTextField RNATextField;
+    private JButton mainButton;
+    private JLabel enterText;
+    private JButton openFileButton;
     public ApplicationWindow() {
-        window = this;
-        button.addActionListener(listener);
+        ApplicationWindow window = this;
+        JFileChooser openFileChooser = new JFileChooser();
+        openFileChooser.setFileFilter(new FileNameExtensionFilter("TXT files", "txt"));
+        mainButton.addActionListener(new RNAListener(RNATextField,window));
+        openFileButton.addActionListener(new OpenFIleButtonListener(RNATextField, openFileChooser,window));
     }
-
     public static void main(String[] args) {
         ApplicationWindow applicationWindow = new ApplicationWindow();
         applicationWindow.setContentPane(applicationWindow.panelMain);
