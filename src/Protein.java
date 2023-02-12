@@ -37,14 +37,11 @@ public class Protein extends ProteinImage{
         this.peptide = makePeptideChain();
         this.mass = calculateMass();
     }
-
     public JPanel getImage()
     {
         return peptide;
     }
-
     public double getMass() { return mass; }
-
     private double calculateMass()
     {
         double mass = 0;

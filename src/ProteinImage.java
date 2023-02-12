@@ -24,11 +24,11 @@ public abstract class ProteinImage {
             {
                 addDownImage(sequence.charAt(i/2));
             } else if((i-1)%4==0) {
-                addNH();
+                if(sequence.charAt((i/2)+1)!='P') {addNH();}
             }else if((i-2)%4==0) {
                 addUpImage(sequence.charAt(i/2));
             }else if((i-3)%4==0){
-                addHN();
+                if(sequence.charAt((i/2)+1)!='P') {addHN();}
             }
         }
     }
