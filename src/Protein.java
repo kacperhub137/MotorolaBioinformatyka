@@ -42,13 +42,53 @@ public class Protein extends ProteinImage{
         return peptide;
     }
     public double getMass() { return mass; }
-    private double calculateMass()
-    {
+    private double calculateMass() {
         double mass = 0;
         for (int i = 0; i < sequence.length(); i++) {
             char aminoAcid = sequence.charAt(i);
             mass += aminoAcidMasses.getOrDefault(aminoAcid, 0.0);
         }
         return mass;
+    }
+    private double calculateHydrophobicityIndex(){
+        HashMap<Character, Double> hydrophobicityValues = new HashMap<>();
+        hydrophobicityValues.put('A', 0.62);
+        hydrophobicityValues.put('C', 0.29);
+        hydrophobicityValues.put('D', -0.90);
+        hydrophobicityValues.put('E', -0.74);
+        hydrophobicityValues.put('F', 1.19);
+        hydrophobicityValues.put('G', 0.48);
+        hydrophobicityValues.put('H', -0.40);
+        hydrophobicityValues.put('I', 1.38);
+        hydrophobicityValues.put('K', -1.50);
+        hydrophobicityValues.put('L', 1.06);
+        hydrophobicityValues.put('M', 0.64);
+        hydrophobicityValues.put('N', -0.78);
+        hydrophobicityValues.put('P', 0.12);
+        hydrophobicityValues.put('Q', -0.85);
+        hydrophobicityValues.put('R', -2.53);
+        hydrophobicityValues.put('S', -0.18);
+        hydrophobicityValues.put('T', -0.05);
+        hydrophobicityValues.put('V', 1.08);
+        hydrophobicityValues.put('W', 0.81);
+        hydrophobicityValues.put('Y', 0.26);
+        double hydrophobicitySum = 0.0;
+        for (int i = 0; i < sequence.length(); i++) {
+            char aminoAcid = sequence.charAt(i);
+            hydrophobicitySum += hydrophobicityValues.get(aminoAcid);
+        }
+        double hydrophobicityIndex = hydrophobicitySum / sequence.length();
+        return hydrophobicityIndex;
+    }
+    private double calculateIndexpH(){
+        HashMap<Character, Double> pHValues = new HashMap<>();
+        pHValues.put('D', 3.90);
+        pHValues.put('E', 4.07);
+        pHValues.put('Y', 10.07);
+        pHValues.put('C', 8.33);
+        pHValues.put('H', 6.04);
+        pHValues.put('K', 10.54);
+        double ph= 0.0;
+        return ph;
     }
 }
