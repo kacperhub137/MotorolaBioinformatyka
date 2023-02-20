@@ -30,8 +30,8 @@ public class RNAListener implements ActionListener {
             return;
         }
         window.add(Proteins.get(0).getImage());
-        System.out.println(Proteins.get(0).getMass());
-        System.out.println(Proteins.get(0).getHydrophobicityIndex());
+        System.out.println("Masa: " + Proteins.get(0).getMass());
+        System.out.println("GRAVY: " + Proteins.get(0).getHydrophobicityIndex());
         window.setVisible(true);
     }
     private static boolean isRNA(StringBuilder str)

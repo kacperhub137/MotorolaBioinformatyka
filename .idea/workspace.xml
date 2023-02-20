@@ -7,7 +7,7 @@
     <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AminoAcidsDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AminoAcidsDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Protein.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RNAListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RNAListener.java" afterDir="false" />
     </list>
     <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676900308408</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="zmiana wag aminokwasow">
+      <created>1676901459467</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676901459467</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +171,8 @@
     <MESSAGE value="Poprawa rysowania łańcucha" />
     <MESSAGE value="Img update" />
     <MESSAGE value="Dodanie klasy aminoacid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodanie klasy aminoacid" />
+    <MESSAGE value="zmiana wag aminokwasow" />
+    <option name="LAST_COMMIT_MESSAGE" value="zmiana wag aminokwasow" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

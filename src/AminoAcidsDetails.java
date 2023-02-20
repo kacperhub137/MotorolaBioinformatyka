@@ -43,25 +43,25 @@ public abstract class AminoAcidsDetails {
     }
     protected static final HashMap<Character, Double> hydrophobicityValues = new HashMap<>();
     static {
-        hydrophobicityValues.put('A', 0.62);
-        hydrophobicityValues.put('C', 0.29);
-        hydrophobicityValues.put('D', -0.90);
-        hydrophobicityValues.put('E', -0.74);
-        hydrophobicityValues.put('F', 1.19);
-        hydrophobicityValues.put('G', 0.48);
-        hydrophobicityValues.put('H', -0.40);
-        hydrophobicityValues.put('I', 1.38);
-        hydrophobicityValues.put('K', -1.50);
-        hydrophobicityValues.put('L', 1.06);
-        hydrophobicityValues.put('M', 0.64);
-        hydrophobicityValues.put('N', -0.78);
-        hydrophobicityValues.put('P', 0.12);
-        hydrophobicityValues.put('Q', -0.85);
-        hydrophobicityValues.put('R', -2.53);
-        hydrophobicityValues.put('S', -0.18);
-        hydrophobicityValues.put('T', -0.05);
-        hydrophobicityValues.put('V', 1.08);
-        hydrophobicityValues.put('W', 0.81);
-        hydrophobicityValues.put('Y', 0.26);
+        hydrophobicityValues.put('A', 1.8);
+        hydrophobicityValues.put('C', 2.5);
+        hydrophobicityValues.put('D', -3.5);
+        hydrophobicityValues.put('E', -3.5);
+        hydrophobicityValues.put('F', 2.8);
+        hydrophobicityValues.put('G', -0.4);
+        hydrophobicityValues.put('H', -3.2);
+        hydrophobicityValues.put('I', 4.5);
+        hydrophobicityValues.put('K', -3.9);
+        hydrophobicityValues.put('L', 3.8);
+        hydrophobicityValues.put('M', 1.9);
+        hydrophobicityValues.put('N', -3.5);
+        hydrophobicityValues.put('P', -1.6);
+        hydrophobicityValues.put('Q', -3.5);
+        hydrophobicityValues.put('R', -4.5);
+        hydrophobicityValues.put('S', -0.8);
+        hydrophobicityValues.put('T', -0.7);
+        hydrophobicityValues.put('V', 4.2);
+        hydrophobicityValues.put('W', -0.9);
+        hydrophobicityValues.put('Y', -1.3);
     }
 }
