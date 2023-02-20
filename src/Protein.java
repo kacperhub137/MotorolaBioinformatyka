@@ -31,7 +31,7 @@ public class Protein extends ProteinImage{
         return hydrophobicityIndex;
     }
     private double calculateMass() {
-        double mass = 0;
+        double mass = 18;
         for (AminoAcid aminoAcid : sequence) {
             mass += aminoAcid.getMass();
         }

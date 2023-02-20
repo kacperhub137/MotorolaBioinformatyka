@@ -20,26 +20,26 @@ public abstract class AminoAcidsDetails {
             "G", "G", "G", "-" , "-", "-"};
     protected static final HashMap<Character, Double> aminoAcidMasses = new HashMap<>();
     static {
-        aminoAcidMasses.put('A', 89.0475);
-        aminoAcidMasses.put('C', 121.0196);
-        aminoAcidMasses.put('D', 133.0373);
-        aminoAcidMasses.put('E', 147.0529);
-        aminoAcidMasses.put('F', 165.0787);
-        aminoAcidMasses.put('G', 75.0319);
-        aminoAcidMasses.put('H', 155.0693);
-        aminoAcidMasses.put('I', 131.0943);
-        aminoAcidMasses.put('K', 146.1052);
-        aminoAcidMasses.put('L', 131.0943);
-        aminoAcidMasses.put('M', 149.0508);
-        aminoAcidMasses.put('N', 132.0533);
-        aminoAcidMasses.put('P', 115.0631);
-        aminoAcidMasses.put('Q', 146.0689);
-        aminoAcidMasses.put('R', 174.1114);
-        aminoAcidMasses.put('S', 105.0424);
-        aminoAcidMasses.put('T', 119.0580);
-        aminoAcidMasses.put('V', 117.0787);
-        aminoAcidMasses.put('W', 204.0896);
-        aminoAcidMasses.put('Y', 181.0736);
+        aminoAcidMasses.put('A', 71.078);
+        aminoAcidMasses.put('C', 103.143);
+        aminoAcidMasses.put('D', 115.087);
+        aminoAcidMasses.put('E', 129.114);
+        aminoAcidMasses.put('F', 147.174);
+        aminoAcidMasses.put('G', 57.051);
+        aminoAcidMasses.put('H', 137.139);
+        aminoAcidMasses.put('I', 113.158);
+        aminoAcidMasses.put('K', 128.172);
+        aminoAcidMasses.put('L', 113.158);
+        aminoAcidMasses.put('M', 131.196);
+        aminoAcidMasses.put('N', 114.103);
+        aminoAcidMasses.put('P', 97.115);
+        aminoAcidMasses.put('Q', 128.129);
+        aminoAcidMasses.put('R', 156.186);
+        aminoAcidMasses.put('S', 87.077);
+        aminoAcidMasses.put('T', 101.104);
+        aminoAcidMasses.put('V', 99.131);
+        aminoAcidMasses.put('W', 186.210);
+        aminoAcidMasses.put('Y', 163.173);
     }
     protected static final HashMap<Character, Double> hydrophobicityValues = new HashMap<>();
     static {
