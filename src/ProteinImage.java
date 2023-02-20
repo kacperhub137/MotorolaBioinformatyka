@@ -1,11 +1,12 @@
 import javax.swing.*;
+import java.util.ArrayList;
 
 public abstract class ProteinImage {
 
     private final JPanel peptide = new JPanel();
-    private final StringBuilder sequence;
+    private final ArrayList<AminoAcid> sequence;
 
-    protected ProteinImage(StringBuilder sequence)
+    protected ProteinImage(ArrayList<AminoAcid> sequence)
     {
         this.sequence = sequence;
     }
@@ -18,17 +19,17 @@ public abstract class ProteinImage {
 
     private void addMiddleImages()
     {
-        for(int i=0;i<sequence.length()*2-1;i++)
+        for(int i=0;i<sequence.size()*2-1;i++)
         {
             if(i%4==0)
             {
-                addDownImage(sequence.charAt(i/2));
+                addDownImage(sequence.get(i/2).getOneLetterCode());
             } else if((i-1)%4==0) {
-                if(sequence.charAt((i/2)+1)!='P') {addNH();}
+                if(sequence.get((i/2)+1).getOneLetterCode()!='P') {addNH();}
             }else if((i-2)%4==0) {
-                addUpImage(sequence.charAt(i/2));
+                addUpImage(sequence.get(i/2).getOneLetterCode());
             }else if((i-3)%4==0){
-                if(sequence.charAt((i/2)+1)!='P') {addHN();}
+                if(sequence.get((i/2)+1).getOneLetterCode()!='P') {addHN();}
             }
         }
     }

@@ -6,25 +6,32 @@ import java.util.ArrayList;
 public class RNAListener implements ActionListener {
     private final JTextField textField;
     private final ApplicationWindow window;
+    ArrayList<Protein> Proteins = new ArrayList<>();
     public RNAListener(JTextField textField,ApplicationWindow window)
     {
         this.textField = textField;
         this.window = window;
     }
     public void actionPerformed(ActionEvent event) {
-        StringBuilder sequence = new StringBuilder(textField.getText().trim().toUpperCase().replace("T","U"));
-        StringBuilder[] aminoAcids_sequence = new StringBuilder[3];
-        ArrayList<Protein> Proteins = new ArrayList<>();
-        if(checkInput(sequence))
+        StringBuilder RNAsequence = new StringBuilder(textField.getText().trim().toUpperCase().replace("T","U"));
+        ArrayList<AminoAcid>[] aminoAcids_sequence = new ArrayList[3];
+        if(checkInput(RNAsequence))
         {
-            swapCodonsToAminoAcids(aminoAcids_sequence, sequence);
+            for(int i=0;i<3;i++)
+            {
+                aminoAcids_sequence[i] = new ArrayList<AminoAcid>();
+                for (int j = i; j < RNAsequence.length() - 2; j += 3) {
+                    aminoAcids_sequence[i].add(new AminoAcid(new StringBuilder(RNAsequence.substring(j, j + 3))));
+                }
+                findProteins(aminoAcids_sequence[i]);
+            }
         }else
         {
             return;
         }
-        findProteins(aminoAcids_sequence,Proteins);
         window.add(Proteins.get(0).getImage());
         System.out.println(Proteins.get(0).getMass());
+        System.out.println(Proteins.get(0).getHydrophobicityIndex());
         window.setVisible(true);
     }
     private static boolean isRNA(StringBuilder str)
@@ -47,56 +54,20 @@ public class RNAListener implements ActionListener {
         }
         return true;
     }
-    public void swapCodonsToAminoAcids(StringBuilder[] aminoAcids_sequence,StringBuilder str)
-    {
-        String[] CODONS = {
-                "UUU", "UUC", "UUA", "UUG", "UCU",
-                "UCC", "UCA", "UCG", "UAU", "UAC", "UGU", "UGC", "UGG", "CUU",
-                "CUC", "CUA", "CUG", "CCU", "CCC", "CCA", "CCG", "CAU", "CAC",
-                "CAA", "CAG", "CGU", "CGC", "CGA", "CGG", "AUU", "AUC", "AUA",
-                "AUG", "ACU", "ACC", "ACA", "ACG", "AAU", "AAC", "AAA", "AAG",
-                "AGU", "AGC", "AGA", "AGG", "GUU", "GUC", "GUA", "GUG", "GCU",
-                "GCC", "GCA", "GCG", "GAU", "GAC", "GAA", "GAG", "GGU", "GGC",
-                "GGA", "GGG", "UGA" , "UAG" , "UAA"};
-
-        String[] AMINOS_PER_CODON = {
-                "F", "F", "L", "L", "S", "S",
-                "S", "S", "Y", "Y", "C", "C", "W", "L", "L", "L", "L", "P", "P",
-                "P", "P", "H", "H", "Q", "Q", "R", "R", "R", "R", "I", "I", "I",
-                "M", "T", "T", "T", "T", "N", "N", "K", "K", "S", "S", "R", "R",
-                "V", "V", "V", "V", "A", "A", "A", "A", "D", "D", "E", "E", "G",
-                "G", "G", "G", "-" , "-", "-"};
-
-        StringBuilder proteinSequence = new StringBuilder();
-        for (int j = 0; j < 3; j++) {
-            for (int i = j; i < str.length() - 2; i += 3) {
-                String currentCodon = str.substring(i, i + 3);
-                for (int k = 0; k < CODONS.length; k++) {
-                    if (CODONS[k].equals(currentCodon)) {
-                        proteinSequence.append(AMINOS_PER_CODON[k]);
-                    }
-                }
+    public void findProteins(ArrayList<AminoAcid> aminoAcid_sequence) {
+        ArrayList<AminoAcid> proteinSequence = new ArrayList<>();
+        boolean isProtein = false;
+        for (AminoAcid aminoAcid : aminoAcid_sequence) {
+            if (aminoAcid.getOneLetterCode() == 'M') {
+                isProtein = true;
             }
-            aminoAcids_sequence[j] = new StringBuilder(proteinSequence);
-            proteinSequence.setLength(0);
-        }
-    }
-    public void findProteins(StringBuilder[] aminoAcid_sequence,ArrayList<Protein> Proteins) {
-        StringBuilder proteinSequence = new StringBuilder();
-        for (int i = 0; i < 3; i++) {
-            boolean isProtein = false;
-            for (int j = 0; j < aminoAcid_sequence[i].length(); j++) {
-                if (aminoAcid_sequence[i].substring(j, j + 1).equals("M")) {
-                    isProtein = true;
-                }
-                if (aminoAcid_sequence[i].substring(j, j + 1).equals("-") && isProtein) {
-                    isProtein = false;
-                    Proteins.add(new Protein(proteinSequence));
-                    proteinSequence = new StringBuilder();
-                }
-                if (isProtein) {
-                    proteinSequence.append(aminoAcid_sequence[i].substring(j, j + 1));
-                }
+            if (aminoAcid.getOneLetterCode() == '-' && isProtein) {
+                isProtein = false;
+                Proteins.add(new Protein(proteinSequence));
+                proteinSequence.clear();
+            }
+            if (isProtein) {
+                proteinSequence.add(new AminoAcid(aminoAcid.getCodon()));
             }
         }
     }
