@@ -3,10 +3,14 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class ApplicationWindow extends JFrame {
     private JPanel panelMain;
+    private JPanel pnlSide;
+    private JPanel pnlCenter;
     private JTextField RNATextField;
     private JButton mainButton;
-    private JLabel enterText;
     private JButton openFileButton;
+    private JButton Home;
+    private JButton Files;
+
     public ApplicationWindow() {
         ApplicationWindow window = this;
         JFileChooser openFileChooser = new JFileChooser();
