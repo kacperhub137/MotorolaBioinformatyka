@@ -11,7 +11,7 @@ public class ApplicationWindow extends JFrame {
         ApplicationWindow window = this;
         JFileChooser openFileChooser = new JFileChooser();
         openFileChooser.setFileFilter(new FileNameExtensionFilter("TXT files", "txt"));
-        mainButton.addActionListener(new RNAListener(RNATextField,window));
+        mainButton.addActionListener(new RNAListener(window));
         openFileButton.addActionListener(new OpenFIleButtonListener(RNATextField, openFileChooser,window));
     }
     public static void main(String[] args) {
@@ -20,5 +20,9 @@ public class ApplicationWindow extends JFrame {
         applicationWindow.setVisible(true);
         applicationWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         applicationWindow.setSize(800,1000);
+    }
+    public String getText()
+    {
+        return RNATextField.getText();
     }
 }

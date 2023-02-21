@@ -4,57 +4,49 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 public class RNAListener implements ActionListener {
-    private final JTextField textField;
     private final ApplicationWindow window;
-    ArrayList<Protein> Proteins = new ArrayList<>();
-    public RNAListener(JTextField textField,ApplicationWindow window)
+    private StringBuilder RNAsequence = new StringBuilder();
+    private final ArrayList<AminoAcid>[] aminoAcids_sequence = new ArrayList[3];
+    private final ArrayList<Protein> Proteins = new ArrayList<>();
+    public RNAListener(ApplicationWindow window)
     {
-        this.textField = textField;
         this.window = window;
     }
     public void actionPerformed(ActionEvent event) {
-        StringBuilder RNAsequence = new StringBuilder(textField.getText().trim().toUpperCase().replace("T","U"));
-        ArrayList<AminoAcid>[] aminoAcids_sequence = new ArrayList[3];
-        if(checkInput(RNAsequence))
+        RNAsequence = new StringBuilder(window.getText().trim().toUpperCase().replace("T", "U"));
+        if(isRNA())
         {
-            for(int i=0;i<3;i++)
+            if(swapRNAToProteins())
             {
-                aminoAcids_sequence[i] = new ArrayList<AminoAcid>();
-                for (int j = i; j < RNAsequence.length() - 2; j += 3) {
-                    aminoAcids_sequence[i].add(new AminoAcid(new StringBuilder(RNAsequence.substring(j, j + 3))));
+                JOptionPane.showMessageDialog(window, "Znaleziono proteiny");
+                for(Protein protein : Proteins)
+                {
+                    System.out.println("Masa: " + protein.getMass());
+                    System.out.println("GRAVY: " + protein.getHydrophobicityIndex());
                 }
-                findProteins(aminoAcids_sequence[i]);
+                window.dispose();
+                new ProteinsWindow(Proteins).setVisible(true);
+            }else
+            {
+                JOptionPane.showMessageDialog(window, "Nie znaleziono protein");
             }
         }else
         {
-            return;
+            JOptionPane.showMessageDialog(window, "Niepoprawna sekwencja");
         }
-        window.add(Proteins.get(0).getImage());
-        System.out.println("Masa: " + Proteins.get(0).getMass());
-        System.out.println("GRAVY: " + Proteins.get(0).getHydrophobicityIndex());
-        window.setVisible(true);
     }
-    private static boolean isRNA(StringBuilder str)
+    private boolean isRNA()
     {
-        for(int i=0;i<str.length();i++)
+        for(int i=0;i<RNAsequence.length();i++)
         {
-            if(str.charAt(i) != 'A' && str.charAt(i) != 'G' && str.charAt(i) != 'U' && str.charAt(i) != 'C')
+            if(RNAsequence.charAt(i) != 'A' && RNAsequence.charAt(i) != 'G' && RNAsequence.charAt(i) != 'U' && RNAsequence.charAt(i) != 'C')
             {
                 return false;
             }
         }
         return true;
     }
-    public static boolean checkInput(StringBuilder str)
-    {
-        if(!isRNA(str))
-        {
-            JOptionPane.showMessageDialog(null, "Niepoprawna sekwencja", "Blad" , JOptionPane.INFORMATION_MESSAGE);
-            return false;
-        }
-        return true;
-    }
-    public void findProteins(ArrayList<AminoAcid> aminoAcid_sequence) {
+    private void findProteins(ArrayList<AminoAcid> aminoAcid_sequence) {
         ArrayList<AminoAcid> proteinSequence = new ArrayList<>();
         boolean isProtein = false;
         for (AminoAcid aminoAcid : aminoAcid_sequence) {
@@ -70,5 +62,17 @@ public class RNAListener implements ActionListener {
                 proteinSequence.add(new AminoAcid(aminoAcid.getCodon()));
             }
         }
+    }
+    private boolean swapRNAToProteins()
+    {
+        for(int i=0;i<3;i++)
+        {
+            aminoAcids_sequence[i] = new ArrayList<>();
+            for (int j = i; j < RNAsequence.length() - 2; j += 3) {
+                aminoAcids_sequence[i].add(new AminoAcid(new StringBuilder(RNAsequence.substring(j, j + 3))));
+            }
+            findProteins(aminoAcids_sequence[i]);
+        }
+        return Proteins.size() > 0;
     }
 }
