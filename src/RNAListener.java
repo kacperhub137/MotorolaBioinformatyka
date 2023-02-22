@@ -19,11 +19,6 @@ public class RNAListener implements ActionListener {
             if(swapRNAToProteins())
             {
                 JOptionPane.showMessageDialog(window, "Znaleziono proteiny");
-                for(Protein protein : Proteins)
-                {
-                    System.out.println("Masa: " + protein.getMass());
-                    System.out.println("GRAVY: " + protein.getHydrophobicityIndex());
-                }
                 window.dispose();
                 new ProteinsWindow(Proteins).setVisible(true);
             }else

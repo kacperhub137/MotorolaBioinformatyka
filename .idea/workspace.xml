@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AminoAcid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AminoAcid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AminoAcidsDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AminoAcidsDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Protein.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProteinsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProteinsWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RNAListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RNAListener.java" afterDir="false" />
     </list>
     <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="" />
@@ -147,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676901459467</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="dodanie okna na 3 czesc zadania">
+      <created>1676970892071</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676970892071</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +184,8 @@
     <MESSAGE value="Img update" />
     <MESSAGE value="Dodanie klasy aminoacid" />
     <MESSAGE value="zmiana wag aminokwasow" />
-    <option name="LAST_COMMIT_MESSAGE" value="zmiana wag aminokwasow" />
+    <MESSAGE value="dodanie okna na 3 czesc zadania" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie okna na 3 czesc zadania" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

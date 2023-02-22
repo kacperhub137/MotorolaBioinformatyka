@@ -2,9 +2,11 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ApplicationWindow">
   <grid id="27dc6" binding="panelMain" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
     <constraints>
-      <xy x="240" y="260" width="529" height="311"/>
+      <xy x="240" y="260" width="529" height="51"/>
     </constraints>
-    <properties/>
+    <properties>
+      <maximumSize width="445" height="40"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="216ad" class="javax.swing.JLabel" binding="enterText">

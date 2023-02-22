@@ -10,7 +10,6 @@ public abstract class AminoAcidsDetails {
             "AGU", "AGC", "AGA", "AGG", "GUU", "GUC", "GUA", "GUG", "GCU",
             "GCC", "GCA", "GCG", "GAU", "GAC", "GAA", "GAG", "GGU", "GGC",
             "GGA", "GGG", "UGA" , "UAG" , "UAA"};
-
     protected final String[] AMINOS_PER_CODON = {
             "F", "F", "L", "L", "S", "S",
             "S", "S", "Y", "Y", "C", "C", "W", "L", "L", "L", "L", "P", "P",
@@ -63,5 +62,29 @@ public abstract class AminoAcidsDetails {
         hydrophobicityValues.put('V', 4.2);
         hydrophobicityValues.put('W', -0.9);
         hydrophobicityValues.put('Y', -1.3);
+    }
+    protected static final HashMap<Character, Double> pKaValues = new HashMap<>();
+    static {
+        pKaValues.put('D',4.0);
+        pKaValues.put('E',4.0);
+        pKaValues.put('H',6.0);
+        pKaValues.put('C',8.5);
+        pKaValues.put('Y',10.5);
+        pKaValues.put('K',10.5);
+        pKaValues.put('R',12.5);
+        pKaValues.put('S',13.0);
+        pKaValues.put('T',13.0);
+    }
+    protected static final HashMap<Character, String> chargePositionValues = new HashMap<>();
+    static {
+        chargePositionValues.put('R',"L1");
+        chargePositionValues.put('D',"R-1");
+        chargePositionValues.put('C',"R-1");
+        chargePositionValues.put('E',"R-1");
+        chargePositionValues.put('H',"L1");
+        chargePositionValues.put('K',"L1");
+        chargePositionValues.put('S',"R-1");
+        chargePositionValues.put('T',"R-1");
+        chargePositionValues.put('Y',"R-1");
     }
 }

@@ -19,7 +19,7 @@ public class ApplicationWindow extends JFrame {
         applicationWindow.setContentPane(applicationWindow.panelMain);
         applicationWindow.setVisible(true);
         applicationWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        applicationWindow.setSize(800,1000);
+        applicationWindow.setSize(500,150);
     }
     public String getText()
     {

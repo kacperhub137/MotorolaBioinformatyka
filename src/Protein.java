@@ -9,6 +9,7 @@ public class Protein extends ProteinImage{
     private final double mass;
     private final double hydrophobicityIndex;
     private final double pH;
+    private final int netCharge;
     public Protein(ArrayList<AminoAcid> sequence)
     {
         super(sequence);
@@ -17,6 +18,7 @@ public class Protein extends ProteinImage{
         this.mass = calculateMass();
         this.hydrophobicityIndex = calculateHydrophobicityIndex();
         this.pH = calculateIndexpH();
+        this.netCharge = calculateNetCharge(7);
     }
     public JPanel getImage()
     {
@@ -30,6 +32,7 @@ public class Protein extends ProteinImage{
     {
         return hydrophobicityIndex;
     }
+    public int getNetCharge() { return netCharge; }
     private double calculateMass() {
         double mass = 18;
         for (AminoAcid aminoAcid : sequence) {
@@ -54,5 +57,16 @@ public class Protein extends ProteinImage{
         pHValues.put('K', 10.54);
         double ph= 0.0;
         return ph;
+    }
+    private int calculateNetCharge(int pH)
+    {
+        int netCharge = 0;
+        if(pH < 9) { netCharge++; }
+        if(pH > 3) { netCharge--; }
+        for(AminoAcid aminoacid : sequence)
+        {
+            netCharge += aminoacid.getCharge(pH);
+        }
+        return netCharge;
     }
 }
