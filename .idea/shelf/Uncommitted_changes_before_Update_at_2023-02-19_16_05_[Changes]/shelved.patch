@@ -1,0 +1,58 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6dbffa4d-e8c0-4c9c-8084-51b27e20c996\" name=\"Changes\" comment=\"Img update\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/ApplicationWindow.form\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/ApplicationWindow.form\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/ApplicationWindow.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/ApplicationWindow.java\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"dc777083-cdd8-43f1-b4d8-812667f510bf\" name=\"Changes by kacper\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ChangesViewManager\" show_ignored=\"true\">\r\n    <option name=\"groupingKeys\">\r\n      <option value=\"directory\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"Nowe\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitToolBoxStore\">\r\n    <option name=\"projectConfigVersion\" value=\"5\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2K6U16w0QFb5XhlKuWjWhX5UyXd\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,\r\n    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;324&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;/home/kacper/IdeaProjects/MotorolaBioinformatyka/Images/AminaAcidsChains&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"$PROJECT_DIR$/Images/AminaAcidsChains\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Unnamed\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"ApplicationWindow\" />\r\n      <module name=\"MotorolaBioinformatyka\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6dbffa4d-e8c0-4c9c-8084-51b27e20c996\" name=\"Changes\" comment=\"\" />\r\n      <created>1673294309723</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1673294309723</updated>\r\n      <workItem from=\"1674843615780\" duration=\"47000\" />\r\n      <workItem from=\"1674844212078\" duration=\"62000\" />\r\n      <workItem from=\"1674844538127\" duration=\"5667000\" />\r\n      <workItem from=\"1674902937609\" duration=\"8298000\" />\r\n      <workItem from=\"1675117340537\" duration=\"192000\" />\r\n      <workItem from=\"1675538915203\" duration=\"298000\" />\r\n      <workItem from=\"1675978884568\" duration=\"1442000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"New version clean\">\r\n      <created>1673295100228</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1673295100228</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Dzialajace zdjecie\">\r\n      <created>1674162432924</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1674162432924</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Poprawa rysowania łańcucha\">\r\n      <created>1674750494821</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1674750494821</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Img update\">\r\n      <created>1675117465482</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1675117465482</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Img update\">\r\n      <created>1675979028551</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1675979028551</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"6\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"New version clean\" />\r\n    <MESSAGE value=\"Odczyt kodu genetycznego zakończony\" />\r\n    <MESSAGE value=\"Dzialajace zdjecie\" />\r\n    <MESSAGE value=\"Poprawa rysowania łańcucha\" />\r\n    <MESSAGE value=\"Img update\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Img update\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 1dfe1b80a61e74aa8d40ec2079fcfc4a222d87b8)
++++ b/.idea/workspace.xml	(date 1675980529594)
+@@ -4,11 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="Img update">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.form" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.java" afterDir="false" />
+-    </list>
++    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="GetAmoniAcidsMass funtcion done" />
+     <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -95,7 +91,7 @@
+       <workItem from="1674902937609" duration="8298000" />
+       <workItem from="1675117340537" duration="192000" />
+       <workItem from="1675538915203" duration="298000" />
+-      <workItem from="1675978884568" duration="1442000" />
++      <workItem from="1675978884568" duration="1629000" />
+     </task>
+     <task id="LOCAL-00001" summary="New version clean">
+       <created>1673295100228</created>
+@@ -132,7 +128,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1675979028551</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="GetAmoniAcidsMass funtcion done">
++      <created>1675980463919</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1675980463919</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -155,6 +158,7 @@
+     <MESSAGE value="Dzialajace zdjecie" />
+     <MESSAGE value="Poprawa rysowania łańcucha" />
+     <MESSAGE value="Img update" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Img update" />
++    <MESSAGE value="GetAmoniAcidsMass funtcion done" />
++    <option name="LAST_COMMIT_MESSAGE" value="GetAmoniAcidsMass funtcion done" />
+   </component>
+ </project>
+\ No newline at end of file
