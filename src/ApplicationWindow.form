@@ -31,7 +31,6 @@
           <component id="fd13f" class="javax.swing.JButton" binding="Home">
             <constraints/>
             <properties>
-              <icon value="com/sun/deploy/resources/image/home24.png"/>
               <label value=""/>
               <preferredSize width="40" height="40"/>
               <text value=""/>

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="Img update">
+    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="dodanie okna na 3 czesc zadania">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MotorolaBioinformatyka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MotorolaBioinformatyka.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AminoAcid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AminoAcid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Protein.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProteinsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProteinsWindow.java" afterDir="false" />
     </list>
     <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +45,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2K6U16w0QFb5XhlKuWjWhX5UyXd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -58,11 +66,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;324&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kacper/IdeaProjects/MotorolaBioinformatyka/Images/AminaAcidsChains&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kacper/Downloads/jfreechart-1.5.4.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propGUI&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -131,7 +143,28 @@
       <option name="project" value="LOCAL" />
       <updated>1675979028551</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Dodanie klasy aminoacid">
+      <created>1676900308408</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676900308408</updated>
+    </task>
+    <task id="LOCAL-00007" summary="zmiana wag aminokwasow">
+      <created>1676901459467</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676901459467</updated>
+    </task>
+    <task id="LOCAL-00008" summary="dodanie okna na 3 czesc zadania">
+      <created>1676970892071</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676970892071</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +187,134 @@
     <MESSAGE value="Dzialajace zdjecie" />
     <MESSAGE value="Poprawa rysowania łańcucha" />
     <MESSAGE value="Img update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Img update" />
+    <MESSAGE value="Dodanie klasy aminoacid" />
+    <MESSAGE value="zmiana wag aminokwasow" />
+    <MESSAGE value="dodanie okna na 3 czesc zadania" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie okna na 3 czesc zadania" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/javax/swing/ImageIcon.java</url>
+          <line>216</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/javax/swing/text/html/FormView.java</url>
+          <line>240</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/com/sun/java/swing/plaf/gtk/Metacity.java</url>
+          <line>561</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/javax/swing/text/html/StyleSheet.java</url>
+          <line>2038</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/javax/swing/text/html/StyleSheet.java</url>
+          <line>2043</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/sun/print/ServiceDialog.java</url>
+          <line>2813</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/sun/tools/jconsole/AboutDialog.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/sun/tools/jconsole/InternalDialog.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/sun/tools/jconsole/InternalDialog.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/sun/tools/jconsole/VMPanel.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/sun/tools/jconsole/VMPanel.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/sun/tools/jconsole/VMPanel.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/sun/tools/jconsole/VMPanel.java</url>
+          <line>148</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/sun/tools/jconsole/inspector/IconManager.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_352/src.zip!/javax/swing/ImageIcon.java</url>
+          <line>215</line>
+          <properties class="javax.swing.ImageIcon" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.lang.StringBuilder" memberName="value" />
+        <PinnedItemInfo parentTag="Protein" memberName="peptide" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

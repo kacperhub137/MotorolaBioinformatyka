@@ -1,5 +1,6 @@
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import java.awt.*;
 
 public class ApplicationWindow extends JFrame {
     private JPanel panelMain;
@@ -12,21 +13,21 @@ public class ApplicationWindow extends JFrame {
     private JButton Files;
 
     public ApplicationWindow() {
-        ApplicationWindow window = this;
         JFileChooser openFileChooser = new JFileChooser();
         openFileChooser.setFileFilter(new FileNameExtensionFilter("TXT files", "txt"));
-        mainButton.addActionListener(new RNAListener(window));
-        openFileButton.addActionListener(new OpenFIleButtonListener(RNATextField, openFileChooser,window));
+        this.mainButton.addActionListener(new RNAListener(this));
+        this.openFileButton.addActionListener(new OpenFIleButtonListener(RNATextField, openFileChooser, this));
     }
+
     public static void main(String[] args) {
         ApplicationWindow applicationWindow = new ApplicationWindow();
         applicationWindow.setContentPane(applicationWindow.panelMain);
         applicationWindow.setVisible(true);
         applicationWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        applicationWindow.setSize(500,150);
+        applicationWindow.setSize(500, 150);
     }
-    public String getText()
-    {
+
+    public String getText() {
         return RNATextField.getText();
     }
 }

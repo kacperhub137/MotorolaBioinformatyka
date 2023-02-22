@@ -33,7 +33,7 @@ public class AminoAcid extends AminoAcidsDetails {
     {
         return hydrophobicityValues.get(oneLetterCode);
     }
-    public int getCharge(int pH)
+    public int getCharge(double pH)
     {
         if(pKa == 0 || pKa == pH) {return 0;}
         if(pH < pKa)
