@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="dodanie okna na 3 czesc zadania">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MotorolaBioinformatyka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MotorolaBioinformatyka.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AminoAcid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AminoAcid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ApplicationWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Protein.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProteinsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProteinsWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AminoAcid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AminoAcid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AminoAcidsDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AminoAcidsDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationWindow.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NetChargeDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OpenFIleButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OpenFIleButtonListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Protein.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProteinImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProteinImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProteinInformationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProteinsWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProteinsWindow.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProteinsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProteinsWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RNAListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RNAListener.java" afterDir="false" />
     </list>
     <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +44,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Nowe" />
+        <entry key="$PROJECT_DIR$" value="master1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,28 +66,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;324&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kacper/Downloads/jfreechart-1.5.4.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propGUI&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "324",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/kacper/Downloads/jfreechart-1.5.4.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Images/AminaAcidsChains" />
@@ -93,6 +103,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="" />
@@ -205,32 +218,32 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/ProteinImage.java</url>
           <line>40</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/ProteinImage.java</url>
           <line>47</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/ProteinImage.java</url>
           <line>54</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/ProteinImage.java</url>
           <line>61</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/ProteinImage.java</url>
           <line>68</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ProteinImage.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/ProteinImage.java</url>
           <line>75</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
