@@ -1,6 +1,8 @@
 import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
+import java.util.Arrays;
+import java.util.HashMap;
 
 public class ProteinInformationPanel extends JPanel {
     public ProteinInformationPanel(Protein protein)
@@ -14,6 +16,12 @@ public class ProteinInformationPanel extends JPanel {
         this.add(new JLabel("Net charge at pH = 7: " + protein.getNetCharge()));
         this.add(new JLabel("Polarity: " + protein.getPolarity()));
         this.add(new JLabel("Molecular mass: " + protein.getMolecularMass()));
+        String a = "";
+        for (HashMap.Entry<Character, Integer> entry : protein.getAminoAcidCounts().entrySet()) {
+            a += entry.getKey() + ": " + entry.getValue();
+        }
+        this.add(new JLabel(a));
+        System.out.println("point" + protein.getIsoelectricPoint());
         this.add(new NetChargeDiagram(protein));
     }
 }

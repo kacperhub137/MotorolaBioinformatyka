@@ -132,4 +132,49 @@ public abstract class AminoAcidsDetails {
         aminoAcidMolecularMasses.put('W', 204.228);
         aminoAcidMolecularMasses.put('Y', 181.191);
     }
+    protected static final  HashMap<Character, Integer> aminoAcidCounts = new HashMap<>();
+    static {
+        aminoAcidCounts.put('A', 0);
+        aminoAcidCounts.put('C', 0);
+        aminoAcidCounts.put('D', 0);
+        aminoAcidCounts.put('E', 0);
+        aminoAcidCounts.put('F', 0);
+        aminoAcidCounts.put('G', 0);
+        aminoAcidCounts.put('H', 0);
+        aminoAcidCounts.put('I', 0);
+        aminoAcidCounts.put('K', 0);
+        aminoAcidCounts.put('L', 0);
+        aminoAcidCounts.put('M', 0);
+        aminoAcidCounts.put('N', 0);
+        aminoAcidCounts.put('P', 0);
+        aminoAcidCounts.put('Q', 0);
+        aminoAcidCounts.put('R', 0);
+        aminoAcidCounts.put('S', 0);
+        aminoAcidCounts.put('T', 0);
+        aminoAcidCounts.put('V', 0);
+        aminoAcidCounts.put('W', 0);
+        aminoAcidCounts.put('Y', 0);
+    }
+    protected static final HashMap<Character, Double> extinctionCoefficientValue = new HashMap<Character, Double>() {{
+        extinctionCoefficientValue.put('A', 5500.0);
+        extinctionCoefficientValue.put('C', 125.0);
+        extinctionCoefficientValue.put('D', 11500.0);
+        extinctionCoefficientValue.put('E', 9400.0);
+        extinctionCoefficientValue.put('F', 20500.0);
+        extinctionCoefficientValue.put('G', 1700.0);
+        extinctionCoefficientValue.put('H', 21600.0);
+        extinctionCoefficientValue.put('I', 8800.0);
+        extinctionCoefficientValue.put('K', 32500.0);
+        extinctionCoefficientValue.put('L', 8600.0);
+        extinctionCoefficientValue.put('M', 6800.0);
+        extinctionCoefficientValue.put('N', 5600.0);
+        extinctionCoefficientValue.put('P', 8700.0);
+        extinctionCoefficientValue.put('Q', 7600.0);
+        extinctionCoefficientValue.put('R', 12200.0);
+        extinctionCoefficientValue.put('S', 5700.0);
+        extinctionCoefficientValue.put('T', 8400.0);
+        extinctionCoefficientValue.put('V', 7000.0);
+        extinctionCoefficientValue.put('W', 22000.0);
+        extinctionCoefficientValue.put('Y', 14900.0);
+    }};
 }

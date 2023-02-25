@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class AminoAcid extends AminoAcidsDetails {
     private final char oneLetterCode;
     private final StringBuilder codon;
@@ -35,6 +37,8 @@ public class AminoAcid extends AminoAcidsDetails {
     }
     public Double getMolecularMass(){return aminoAcidMolecularMasses.get(oneLetterCode);}
     public Integer getPolarity(){return polarities.get(oneLetterCode);}
+    static public HashMap<Character, Integer>getAminoAcidCount(){return aminoAcidCounts;}
+    public Double getExtinctionCoefficientValue(){return extinctionCoefficientValue.get(oneLetterCode);}
     public int getCharge(double pH)
     {
         if(pKa == 0 || pKa == pH) {return 0;}
