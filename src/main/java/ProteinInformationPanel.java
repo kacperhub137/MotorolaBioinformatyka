@@ -12,6 +12,8 @@ public class ProteinInformationPanel extends JPanel {
         this.add(new JLabel("Masa: " + protein.getMass()));
         this.add(new JLabel("GRAVY: " + protein.getHydrophobicityIndex()));
         this.add(new JLabel("Net charge at pH = 7: " + protein.getNetCharge()));
+        this.add(new JLabel("Polarity: " + protein.getPolarity()));
+        this.add(new JLabel("Molecular mass: " + protein.getMolecularMass()));
         this.add(new NetChargeDiagram(protein));
     }
 }

@@ -87,4 +87,49 @@ public abstract class AminoAcidsDetails {
         chargePositionValues.put('T',"R-1");
         chargePositionValues.put('Y',"R-1");
     }
+    protected static final  HashMap<Character, Integer> polarities = new HashMap<>();
+    static {polarities.put('A', 0);
+        polarities.put('C', 0);
+        polarities.put('D', 1);
+        polarities.put('E', 1);
+        polarities.put('F', 0);
+        polarities.put('G', 0);
+        polarities.put('H', 1);
+        polarities.put('I', 0);
+        polarities.put('K', 1);
+        polarities.put('L', 0);
+        polarities.put('M', 0);
+        polarities.put('N', 1);
+        polarities.put('P', 0);
+        polarities.put('Q', 1);
+        polarities.put('R', 1);
+        polarities.put('S', 1);
+        polarities.put('T', 1);
+        polarities.put('V', 0);
+        polarities.put('W', 0);
+        polarities.put('Y', 1);
+    }
+    protected static final HashMap<Character, Double> aminoAcidMolecularMasses = new HashMap<>();
+    static {
+        aminoAcidMolecularMasses.put('A', 89.094);
+        aminoAcidMolecularMasses.put('C', 121.154);
+        aminoAcidMolecularMasses.put('D', 133.104);
+        aminoAcidMolecularMasses.put('E', 147.131);
+        aminoAcidMolecularMasses.put('F', 165.192);
+        aminoAcidMolecularMasses.put('G', 75.067);
+        aminoAcidMolecularMasses.put('H', 155.156);
+        aminoAcidMolecularMasses.put('I', 131.175);
+        aminoAcidMolecularMasses.put('K', 146.189);
+        aminoAcidMolecularMasses.put('L', 131.175);
+        aminoAcidMolecularMasses.put('M', 149.208);
+        aminoAcidMolecularMasses.put('N', 132.119);
+        aminoAcidMolecularMasses.put('P', 115.132);
+        aminoAcidMolecularMasses.put('Q', 146.146);
+        aminoAcidMolecularMasses.put('R', 174.203);
+        aminoAcidMolecularMasses.put('S', 105.093);
+        aminoAcidMolecularMasses.put('T', 119.119);
+        aminoAcidMolecularMasses.put('V', 117.148);
+        aminoAcidMolecularMasses.put('W', 204.228);
+        aminoAcidMolecularMasses.put('Y', 181.191);
+    }
 }

@@ -33,6 +33,8 @@ public class AminoAcid extends AminoAcidsDetails {
     {
         return hydrophobicityValues.get(oneLetterCode);
     }
+    public Double getMolecularMass(){return aminoAcidMolecularMasses.get(oneLetterCode);}
+    public Integer getPolarity(){return polarities.get(oneLetterCode);}
     public int getCharge(double pH)
     {
         if(pKa == 0 || pKa == pH) {return 0;}
