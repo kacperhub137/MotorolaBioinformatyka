@@ -155,7 +155,8 @@ public abstract class AminoAcidsDetails {
         aminoAcidCounts.put('W', 0);
         aminoAcidCounts.put('Y', 0);
     }
-    protected static final HashMap<Character, Double> extinctionCoefficientValue = new HashMap<Character, Double>() {{
+    protected static final HashMap<Character, Double> extinctionCoefficientValue = new HashMap<Character, Double>();
+    static {
         extinctionCoefficientValue.put('A', 5500.0);
         extinctionCoefficientValue.put('C', 125.0);
         extinctionCoefficientValue.put('D', 11500.0);
@@ -176,5 +177,5 @@ public abstract class AminoAcidsDetails {
         extinctionCoefficientValue.put('V', 7000.0);
         extinctionCoefficientValue.put('W', 22000.0);
         extinctionCoefficientValue.put('Y', 14900.0);
-    }};
+    }
 }

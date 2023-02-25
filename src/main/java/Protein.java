@@ -12,8 +12,9 @@ public class Protein extends ProteinImage {
     private final int netChargeAtPH7;
     private final int polarity;
     private final double molecularMass;
+    private final double isoelectricPoint;
     private HashMap<Character,Integer> aminoAcidCounts;
-    private final double extinctionCoefficient;
+    //private final double extinctionCoefficient;
     // private  final HashMap<Character, Integer> aminoAcidCounts = new HashMap<>();
     public Protein(ArrayList<AminoAcid> sequence) {
         super(sequence);
@@ -25,6 +26,8 @@ public class Protein extends ProteinImage {
         this.netChargeAtPH7 = calculateNetCharge(7);
         this.polarity = checkPolarity();
         this.molecularMass = calculateMolecularMass();
+        this.aminoAcidCounts = countAminoAcids();
+        this.isoelectricPoint = calculateIsoelectricPoint();
     }
 
     public JPanel getImage() {
@@ -58,9 +61,9 @@ public class Protein extends ProteinImage {
     public double getIsoelectricPoint() {
         return isoelectricPoint;
     }
-    public double getExtinctionCoefficient(){
+    /*public double getExtinctionCoefficient(){
         return extinctionCoefficient;
-    }
+    }*/
     public HashMap<Character,Integer> getAminoAcidCounts(){
         return aminoAcidCounts;
     }
@@ -124,19 +127,21 @@ public class Protein extends ProteinImage {
     }
 
     private double calculateIsoelectricPoint() {
-        double pH = 0;
+        double pH = 0.0,QN1,QN2,QN3,QN4,QN5,QP1,QP2,QP3,QP4,NQ;
         do {
-            double QN1=-1/(1+Math.pow(10,(3.0-pH)));
-            double QN2=-getAminoAcidCounts().get('D')/(1+Math.pow(10,(4.0-pH)));
-            double QN3=-getAminoAcidCounts().get('E')/(1+Math.pow(10,(4.0-pH)));
-            double QN4=-CysNumber/(1+Math.pow(10,(8.5-pH)));
-            double QN5=-TyrNumber/(1+Math.pow(10,(10.5-pH)));
-            double QP1=HisNumber/(1+Math.pow(10,(pH-6.0)));
-            double QP2=1/(1+Math.pow(10,(pH-9.0)));
-            double QP3=LysNumber/(1+Math.pow(10,(pH-10.5)));
-            double QP4=ArgNumber/(1+Math.pow(10,(pH-12.5)));
-        }while()
-            return pH;
+            QN1=-1/(1+Math.pow(10,(3.0-pH)));
+            QN2=-getAminoAcidCounts().get('D')/(1+Math.pow(10,(4.0-pH)));
+            QN3=-getAminoAcidCounts().get('E')/(1+Math.pow(10,(4.0-pH)));
+            QN4=-getAminoAcidCounts().get('C')/(1+Math.pow(10,(8.5-pH)));
+            QN5=-getAminoAcidCounts().get('Y')/(1+Math.pow(10,(10.5-pH)));
+            QP1=getAminoAcidCounts().get('H')/(1+Math.pow(10,(pH-6.0)));
+            QP2=1/(1+Math.pow(10,(pH-9.0)));
+            QP3=getAminoAcidCounts().get('K')/(1+Math.pow(10,(pH-10.5)));
+            QP4=getAminoAcidCounts().get('R')/(1+Math.pow(10,(pH-12.5)));
+            pH+=0.01;
+            NQ = QN1+QN2+QN3+QN4+QN5+QP1+QP2+QP3+QP4;
+        }while(!(NQ<=0.0));
+        return pH;
     }
     private HashMap<Character,Integer> countAminoAcids () {
         HashMap<Character, Integer> aminoAcidCounts = AminoAcid.getAminoAcidCount();
