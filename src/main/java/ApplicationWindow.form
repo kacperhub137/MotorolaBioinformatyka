@@ -2,79 +2,215 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ApplicationWindow">
   <grid id="27dc6" binding="panelMain" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="4" y="14" width="834" height="738"/>
+      <xy x="4" y="14" width="978" height="917"/>
     </constraints>
-    <properties/>
+    <properties>
+      <doubleBuffered value="false"/>
+      <enabled value="false"/>
+      <preferredSize width="600" height="150"/>
+    </properties>
     <border type="none"/>
     <children>
-      <grid id="f544f" binding="pnlSide" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
-        <constraints border-constraint="West"/>
+      <grid id="9f5bf" binding="panelHeader" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
         <properties>
-          <background color="-15394532"/>
-          <preferredSize width="150" height="0"/>
+          <background color="-15987700"/>
+          <inheritsPopupMenu value="false"/>
+          <preferredSize width="0" height="100"/>
         </properties>
-        <border type="none"/>
+        <border type="line">
+          <title-color color="-1"/>
+          <color color="-1"/>
+        </border>
         <children>
-          <component id="5d6cd" class="javax.swing.JButton" binding="mainButton">
-            <constraints/>
+          <component id="c571c" class="javax.swing.JLabel">
+            <constraints border-constraint="Center"/>
             <properties>
-              <text value="mainButton"/>
+              <font name="JetBrains Mono" size="26" style="1"/>
+              <foreground color="-1"/>
+              <horizontalAlignment value="2"/>
+              <preferredSize width="400" height="35"/>
+              <text value="Motorola-Bioinformatyka"/>
             </properties>
           </component>
-          <component id="3d4c4" class="javax.swing.JButton" binding="openFileButton">
-            <constraints/>
+          <component id="6b02e" class="javax.swing.JLabel" binding="menuName">
+            <constraints border-constraint="West"/>
             <properties>
-              <label value="openFileButton"/>
-              <text value="openFileButton"/>
-            </properties>
-          </component>
-          <component id="fd13f" class="javax.swing.JButton" binding="Home">
-            <constraints/>
-            <properties>
-              <label value=""/>
-              <preferredSize width="40" height="40"/>
-              <text value=""/>
-            </properties>
-          </component>
-          <component id="bc839" class="javax.swing.JButton" binding="Files">
-            <constraints/>
-            <properties>
-              <icon value="javax/swing/plaf/metal/icons/ocean/file.gif"/>
-              <label value=""/>
-              <preferredSize width="40" height="40"/>
-              <text value=""/>
+              <background color="-15987700"/>
+              <font name="JetBrains Mono" size="12" style="1"/>
+              <foreground color="-1"/>
+              <horizontalAlignment value="0"/>
+              <preferredSize width="90" height="30"/>
+              <text value="Menu"/>
             </properties>
           </component>
         </children>
       </grid>
-      <grid id="f2d93" binding="pnlCenter" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
-        <constraints border-constraint="Center"/>
+      <grid id="5b04b" binding="panelMenu" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Before"/>
         <properties>
-          <background color="-14538708"/>
+          <autoscrolls value="false"/>
+          <background color="-15987700"/>
+          <preferredSize width="150" height="0"/>
         </properties>
-        <border type="none"/>
+        <border type="line">
+          <font/>
+          <title-color color="-1"/>
+          <color color="-1"/>
+        </border>
         <children>
-          <component id="4a15c" class="javax.swing.JTextField" binding="RNATextField">
-            <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="-1"/>
-              </grid>
-            </constraints>
+          <component id="591b2" class="javax.swing.JButton" binding="mainButton">
+            <constraints/>
             <properties>
-              <text value="AUGAAAUAA"/>
+              <actionCommand value=""/>
+              <background color="-14538708"/>
+              <borderPainted value="true"/>
+              <font name="JetBrains Mono" size="12" style="1"/>
+              <foreground color="-1"/>
+              <label value="mainButton"/>
+              <opaque value="false"/>
+              <preferredSize width="110" height="30"/>
+              <rolloverEnabled value="true"/>
+              <text value="mainButton"/>
             </properties>
           </component>
-          <hspacer id="7267f">
-            <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </hspacer>
-          <vspacer id="f028f">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-            </constraints>
-          </vspacer>
+          <component id="ed9f2" class="javax.swing.JButton" binding="openFileButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-14538708"/>
+              <font name="JetBrains Mono" size="12" style="1"/>
+              <foreground color="-1"/>
+              <label value="openFileButton"/>
+              <opaque value="false"/>
+              <preferredSize width="110" height="30"/>
+              <rolloverEnabled value="true"/>
+              <text value="openFileButton"/>
+            </properties>
+          </component>
+          <grid id="2fdd3" binding="menu1" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints/>
+            <properties>
+              <background color="-15987700"/>
+              <foreground color="-1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="1bc50" class="javax.swing.JLabel" binding="labelEtap1">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15987700"/>
+                  <font name="JetBrains Mono" size="12" style="1"/>
+                  <foreground color="-9839458"/>
+                  <horizontalAlignment value="0"/>
+                  <preferredSize width="90" height="30"/>
+                  <text value="Etap 1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="ad355" binding="menu2" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints/>
+            <properties>
+              <background color="-15987700"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="47612" class="javax.swing.JLabel" binding="labelEtap2">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15987700"/>
+                  <font name="JetBrains Mono" size="12" style="1"/>
+                  <foreground color="-9839458"/>
+                  <horizontalAlignment value="0"/>
+                  <preferredSize width="90" height="30"/>
+                  <text value="Etap 2"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="4e1b1" binding="menu3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints/>
+            <properties>
+              <background color="-15987700"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="f3a5d" class="javax.swing.JLabel" binding="labelEtap3">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15987700"/>
+                  <font name="JetBrains Mono" size="12" style="1"/>
+                  <foreground color="-9839458"/>
+                  <horizontalAlignment value="0"/>
+                  <preferredSize width="90" height="30"/>
+                  <text value="Etap 3"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="3c0aa" binding="panelCenter" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-9839458"/>
+          <doubleBuffered value="true"/>
+          <enabled value="true"/>
+          <focusCycleRoot value="false"/>
+          <opaque value="true"/>
+        </properties>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="false"/>
+        </clientProperties>
+        <border type="none"/>
+        <children>
+          <component id="bc968" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <background color="-9839458"/>
+              <font name="JetBrains Mono" size="20" style="1"/>
+              <foreground color="-15987700"/>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="2"/>
+              <text value="Wprowadź sekwencje białka"/>
+              <verifyInputWhenFocusTarget value="true"/>
+              <verticalAlignment value="1"/>
+              <verticalTextPosition value="1"/>
+            </properties>
+          </component>
+          <component id="268b6" class="javax.swing.JTextField" binding="RNATextField">
+            <constraints/>
+            <properties>
+              <background color="-9839458"/>
+              <caretColor color="-15987700"/>
+              <disabledTextColor color="-15987700"/>
+              <doubleBuffered value="false"/>
+              <editable value="true"/>
+              <focusCycleRoot value="false"/>
+              <font name="JetBrains Mono" size="18" style="1"/>
+              <foreground color="-15987700"/>
+              <horizontalAlignment value="2"/>
+              <inheritsPopupMenu value="false"/>
+              <opaque value="false"/>
+              <preferredSize width="150" height="35"/>
+              <requestFocusEnabled value="false"/>
+              <selectedTextColor color="-16750849"/>
+              <selectionColor color="-16750849"/>
+              <text value="AUGAAAUAA"/>
+              <verifyInputWhenFocusTarget value="true"/>
+              <visible value="true"/>
+            </properties>
+          </component>
         </children>
       </grid>
     </children>

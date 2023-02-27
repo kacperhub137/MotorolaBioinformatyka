@@ -146,8 +146,8 @@ public class Protein extends ProteinImage {
     private HashMap<Character,Integer> countAminoAcids () {
         HashMap<Character, Integer> aminoAcidCounts = AminoAcid.getAminoAcidCount();
         for (AminoAcid aminoAcid : sequence) {
-                int count = aminoAcidCounts.get(aminoAcid.getOneLetterCode());
-                aminoAcidCounts.put(aminoAcid.getOneLetterCode(), count + 1);
+            int count = aminoAcidCounts.get(aminoAcid.getOneLetterCode());
+            aminoAcidCounts.put(aminoAcid.getOneLetterCode(), count + 1);
         }
         for (HashMap.Entry<Character, Integer> entry : aminoAcidCounts.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
@@ -160,4 +160,3 @@ public class Protein extends ProteinImage {
         return EC;
     }
 }
-

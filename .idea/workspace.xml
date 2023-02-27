@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="MolecularMass function">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-02-19_16_05__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-02-19_16_05__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_02_2023__16_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_02_2023__16_46__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-02-19_16_05_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-02-19_16_05__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MotorolaBioinformatyka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MotorolaBioinformatyka.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AminoAcid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AminoAcid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AminoAcidsDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AminoAcidsDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationWindow.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Protein.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java" afterDir="false" />
     </list>
-    <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="" />
+    <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +38,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -145,6 +145,7 @@
       <workItem from="1677143135480" duration="4659000" />
       <workItem from="1677238391767" duration="1869000" />
       <workItem from="1677323594821" duration="13298000" />
+      <workItem from="1677522406951" duration="10405000" />
     </task>
     <task id="LOCAL-00001" summary="New version clean">
       <created>1673295100228</created>
@@ -223,14 +224,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Proline new img, checkProteinPolarity function" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="java.lang.StringBuilder" memberName="value" />
