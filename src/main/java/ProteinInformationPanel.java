@@ -25,5 +25,7 @@ public class ProteinInformationPanel extends JPanel {
         System.out.println("point: " + protein.getIsoelectricPoint());
         this.add(new NetChargeDiagram(protein));
         this.add(AminoAcidCompositionDiagram.createDiagram(protein));
+        this.add(new JLabel(protein.getFormula()));
+        this.add(AtomsCompositionDiagram.createDiagram(protein));
     }
 }

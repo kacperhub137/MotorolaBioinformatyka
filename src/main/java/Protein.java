@@ -14,12 +14,13 @@ public class Protein extends ProteinImage {
     private final double molecularMass;
     private final double isoelectricPoint;
     private final HashMap<Character,Integer> formula;
+    private int numberOfAtoms;
     private final HashMap<Character,Integer> aminoAcidCounts;
     //private final double extinctionCoefficient;
     // private  final HashMap<Character, Integer> aminoAcidCounts = new HashMap<>();
     public Protein(ArrayList<AminoAcid> sequence) {
         super(sequence);
-        this.sequence = sequence;
+        this.sequence = new ArrayList<>(sequence);
         this.peptide = makePeptideChain();
         this.mass = calculateMass();
         this.hydrophobicityIndex = calculateHydrophobicityIndex();
@@ -54,6 +55,19 @@ public class Protein extends ProteinImage {
 
     public int getPolarity() {
         return polarity;
+    }
+
+    public String getFormula()
+    {
+        String a = "";
+        for (HashMap.Entry<Character, Integer> entry : formula.entrySet()) {
+            a += entry.getKey() + "" + entry.getValue();
+        }
+        return a;
+    }
+    public HashMap<Character,Integer> getFormulaAsHashMap()
+    {
+        return formula;
     }
 
     public double getMolecularMass() {
@@ -165,6 +179,10 @@ public class Protein extends ProteinImage {
     {
         HashMap<Character,Integer> formula = new HashMap<Character,Integer>();
         formula.put('C',getAmountOfCarbon());
+        formula.put('H',getAmountOfHydrogen() + 2);
+        formula.put('N',getAmountOfNitrogen());
+        formula.put('O',getAmountOfOxygen() + 1);
+        formula.put('S',getAmountOfSulfur());
         return formula;
     }
     private int getAmountOfCarbon()
@@ -173,7 +191,51 @@ public class Protein extends ProteinImage {
         for(AminoAcid aminoAcid : sequence)
         {
             amountOfCarbon += aminoAcid.getAmountOfCarbon();
+            numberOfAtoms += aminoAcid.getAmountOfCarbon();
         }
         return amountOfCarbon;
+    }
+    private int getAmountOfHydrogen()
+    {
+        int amountOfHydrogen = 0;
+        for(AminoAcid aminoAcid : sequence)
+        {
+            amountOfHydrogen += aminoAcid.getAmountOfHydrogen();
+            numberOfAtoms += aminoAcid.getAmountOfHydrogen();
+        }
+        return amountOfHydrogen;
+    }
+    private int getAmountOfNitrogen()
+    {
+        int amountOfNitrogen = 0;
+        for (AminoAcid aminoAcid : sequence)
+        {
+            amountOfNitrogen += aminoAcid.getAmountOfNitrogen();
+            numberOfAtoms += aminoAcid.getAmountOfNitrogen();
+        }
+        return amountOfNitrogen;
+    }
+    private int getAmountOfOxygen()
+    {
+        int amountOfOxgen = 0;
+        for(AminoAcid aminoAcid : sequence)
+        {
+            amountOfOxgen += aminoAcid.getAmountOfOxygen();
+            numberOfAtoms += aminoAcid.getAmountOfOxygen();
+        }
+        return amountOfOxgen;
+    }
+    private int getAmountOfSulfur()
+    {
+        int amountOfSulfur = 0;
+        for(AminoAcid aminoAcid : sequence)
+        {
+            if(aminoAcid.getOneLetterCode() == 'M' || aminoAcid.getOneLetterCode() == 'C')
+            {
+                amountOfSulfur++;
+                numberOfAtoms++;
+            }
+        }
+        return amountOfSulfur;
     }
 }

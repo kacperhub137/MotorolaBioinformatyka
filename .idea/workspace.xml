@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="MolecularMass function">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-02-19_16_05_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023-02-19_16_05__Changes_.xml" beforeDir="false" />
+    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="diagram i czesc wzoru">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AminoAcidCompositionDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jfree_jfreechart_1_5_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_02_2023,_16_46_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_02_2023__16_46__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AminoAcid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AminoAcid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/AminoAcidsDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AminoAcidsDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Protein.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java" afterDir="false" />
     </list>
@@ -196,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677150031132</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="diagram i czesc wzoru">
+      <created>1677698964667</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677698964667</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +228,8 @@
     <MESSAGE value="Img update" />
     <MESSAGE value="gui change" />
     <MESSAGE value="Proline new img, checkProteinPolarity function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proline new img, checkProteinPolarity function" />
+    <MESSAGE value="diagram i czesc wzoru" />
+    <option name="LAST_COMMIT_MESSAGE" value="diagram i czesc wzoru" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

@@ -201,5 +201,73 @@ public abstract class AminoAcidsDetails {
         amountOfCarbon.put('W',11);
         amountOfCarbon.put('Y',9);
     }
-
+    protected static final HashMap<Character,Integer> amountOfHydrogen = new HashMap<Character,Integer>();
+    static{
+        amountOfHydrogen.put('A',5);
+        amountOfHydrogen.put('C',5);
+        amountOfHydrogen.put('D',5);
+        amountOfHydrogen.put('E',7);
+        amountOfHydrogen.put('F',9);
+        amountOfHydrogen.put('G',3);
+        amountOfHydrogen.put('H',7);
+        amountOfHydrogen.put('I',11);
+        amountOfHydrogen.put('K',12);
+        amountOfHydrogen.put('L',11);
+        amountOfHydrogen.put('M',9);
+        amountOfHydrogen.put('N',6);
+        amountOfHydrogen.put('P',7);
+        amountOfHydrogen.put('Q',8);
+        amountOfHydrogen.put('R',12);
+        amountOfHydrogen.put('S',5);
+        amountOfHydrogen.put('T',7);
+        amountOfHydrogen.put('V',9);
+        amountOfHydrogen.put('W',10);
+        amountOfHydrogen.put('Y',9);
+    }
+    protected static final HashMap<Character,Integer> amountOfNitrogen = new HashMap<Character,Integer>();
+    static{
+        amountOfNitrogen.put('A',1);
+        amountOfNitrogen.put('C',1);
+        amountOfNitrogen.put('D',1);
+        amountOfNitrogen.put('E',1);
+        amountOfNitrogen.put('F',1);
+        amountOfNitrogen.put('G',1);
+        amountOfNitrogen.put('H',3);
+        amountOfNitrogen.put('I',1);
+        amountOfNitrogen.put('K',2);
+        amountOfNitrogen.put('L',1);
+        amountOfNitrogen.put('M',1);
+        amountOfNitrogen.put('N',2);
+        amountOfNitrogen.put('P',1);
+        amountOfNitrogen.put('Q',2);
+        amountOfNitrogen.put('R',4);
+        amountOfNitrogen.put('S',1);
+        amountOfNitrogen.put('T',1);
+        amountOfNitrogen.put('V',1);
+        amountOfNitrogen.put('W',2);
+        amountOfNitrogen.put('Y',1);
+    }
+    protected static final HashMap<Character,Integer> amountOfOxygen = new HashMap<>();
+    static {
+        amountOfOxygen.put('A',1);
+        amountOfOxygen.put('C',1);
+        amountOfOxygen.put('D',3);
+        amountOfOxygen.put('E',3);
+        amountOfOxygen.put('F',1);
+        amountOfOxygen.put('G',1);
+        amountOfOxygen.put('H',1);
+        amountOfOxygen.put('I',1);
+        amountOfOxygen.put('K',1);
+        amountOfOxygen.put('L',1);
+        amountOfOxygen.put('M',1);
+        amountOfOxygen.put('N',2);
+        amountOfOxygen.put('P',1);
+        amountOfOxygen.put('Q',2);
+        amountOfOxygen.put('R',1);
+        amountOfOxygen.put('S',2);
+        amountOfOxygen.put('T',2);
+        amountOfOxygen.put('V',1);
+        amountOfOxygen.put('W',1);
+        amountOfOxygen.put('Y',2);
+    }
 }
