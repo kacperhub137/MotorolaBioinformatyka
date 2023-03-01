@@ -5,12 +5,14 @@ public class AminoAcid extends AminoAcidsDetails {
     private final StringBuilder codon;
     private final double pKa;
     private final String chargePosition;
+    private final int amountOfCarbon;
     public AminoAcid(StringBuilder codon)
     {
         this.oneLetterCode = setOneLetterCode(codon);
         this.codon = codon;
         this.pKa = pKaValues.getOrDefault(oneLetterCode,0.0);
         this.chargePosition = chargePositionValues.getOrDefault(oneLetterCode,"");
+        this.amountOfCarbon = getAmountOfCarbon();
     }
     private char setOneLetterCode(StringBuilder codon)
     {
@@ -37,6 +39,7 @@ public class AminoAcid extends AminoAcidsDetails {
     }
     public Double getMolecularMass(){return aminoAcidMolecularMasses.get(oneLetterCode);}
     public Integer getPolarity(){return polarities.get(oneLetterCode);}
+    public Integer getAmountOfCarbon() { return AminoAcidsDetails.amountOfCarbon.get(oneLetterCode); }
     static public HashMap<Character, Integer>getAminoAcidCount(){return aminoAcidCounts;}
     public Double getExtinctionCoefficientValue(){return extinctionCoefficientValue.get(oneLetterCode);}
     public int getCharge(double pH)

@@ -13,7 +13,8 @@ public class Protein extends ProteinImage {
     private final int polarity;
     private final double molecularMass;
     private final double isoelectricPoint;
-    private HashMap<Character,Integer> aminoAcidCounts;
+    private final HashMap<Character,Integer> formula;
+    private final HashMap<Character,Integer> aminoAcidCounts;
     //private final double extinctionCoefficient;
     // private  final HashMap<Character, Integer> aminoAcidCounts = new HashMap<>();
     public Protein(ArrayList<AminoAcid> sequence) {
@@ -28,6 +29,7 @@ public class Protein extends ProteinImage {
         this.molecularMass = calculateMolecularMass();
         this.aminoAcidCounts = countAminoAcids();
         this.isoelectricPoint = calculateIsoelectricPoint();
+        this.formula = createFormula();
     }
 
     public JPanel getImage() {
@@ -158,5 +160,20 @@ public class Protein extends ProteinImage {
         double EC = 0.0;
 
         return EC;
+    }
+    private HashMap<Character,Integer> createFormula()
+    {
+        HashMap<Character,Integer> formula = new HashMap<Character,Integer>();
+        formula.put('C',getAmountOfCarbon());
+        return formula;
+    }
+    private int getAmountOfCarbon()
+    {
+        int amountOfCarbon = 0;
+        for(AminoAcid aminoAcid : sequence)
+        {
+            amountOfCarbon += aminoAcid.getAmountOfCarbon();
+        }
+        return amountOfCarbon;
     }
 }

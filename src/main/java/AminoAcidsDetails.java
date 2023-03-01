@@ -178,4 +178,28 @@ public abstract class AminoAcidsDetails {
         extinctionCoefficientValue.put('W', 22000.0);
         extinctionCoefficientValue.put('Y', 14900.0);
     }
+    protected static final HashMap<Character, Integer> amountOfCarbon = new HashMap<Character, Integer>();
+    static {
+        amountOfCarbon.put('A',3);
+        amountOfCarbon.put('C',3);
+        amountOfCarbon.put('D',4);
+        amountOfCarbon.put('E',5);
+        amountOfCarbon.put('F',9);
+        amountOfCarbon.put('G',2);
+        amountOfCarbon.put('H',6);
+        amountOfCarbon.put('I',6);
+        amountOfCarbon.put('K',6);
+        amountOfCarbon.put('L',6);
+        amountOfCarbon.put('M',5);
+        amountOfCarbon.put('N',4);
+        amountOfCarbon.put('P',5);
+        amountOfCarbon.put('Q',5);
+        amountOfCarbon.put('R',6);
+        amountOfCarbon.put('S',3);
+        amountOfCarbon.put('T',4);
+        amountOfCarbon.put('V',4);
+        amountOfCarbon.put('W',11);
+        amountOfCarbon.put('Y',9);
+    }
+
 }
