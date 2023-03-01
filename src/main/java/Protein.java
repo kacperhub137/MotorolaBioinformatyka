@@ -33,6 +33,10 @@ public class Protein extends ProteinImage {
         this.formula = createFormula();
     }
 
+    public ArrayList<AminoAcid> getSequence() {
+        return sequence;
+    }
+
     public JPanel getImage() {
         return peptide;
     }

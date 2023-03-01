@@ -19,11 +19,13 @@ public class ApplicationWindow extends JFrame {
     private JPanel menu2;
     private JPanel menu3;
     private JLabel menuName;
+    private JButton firstStageButton;
     Color defaultColor, clickedColor;
     public ApplicationWindow() {
         JFileChooser openFileChooser = new JFileChooser();
         openFileChooser.setFileFilter(new FileNameExtensionFilter("TXT files", "txt"));
-        this.mainButton.addActionListener(new RNAListener(this));
+        this.mainButton.addActionListener(new RNAListener(this, firstStageButton));
+        this.firstStageButton.addActionListener(new RNAListener(this, firstStageButton));
         this.openFileButton.addActionListener(new OpenFIleButtonListener(RNATextField, openFileChooser, this));
         defaultColor = new Color(12 ,12 ,12);
         clickedColor = new Color(255,255,255);
@@ -36,6 +38,7 @@ public class ApplicationWindow extends JFrame {
                 menu3.setBackground(defaultColor);
 
                 menuName.setText("Etap 1");
+
             }
         });
         menu2.addMouseListener(new MouseAdapter() {
@@ -60,15 +63,6 @@ public class ApplicationWindow extends JFrame {
                 menuName.setText("Etap 3");
             }
         });
-
-        menu1.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent mouseEvent) {
-                super.mouseClicked(mouseEvent);
-
-
-            }
-        });
     }
     public static void main(String[] args) {
         ApplicationWindow applicationWindow = new ApplicationWindow();
@@ -76,6 +70,7 @@ public class ApplicationWindow extends JFrame {
         applicationWindow.setVisible(true);
         applicationWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         applicationWindow.setSize(1000, 900 );
+        //ApplicationWindow window =  new ApplicationWindow();
     }
     public String getText() {
         return RNATextField.getText();

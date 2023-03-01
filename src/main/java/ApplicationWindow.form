@@ -158,6 +158,20 @@
               </component>
             </children>
           </grid>
+          <component id="7f8eb" class="javax.swing.JButton" binding="firstStageButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-14538708"/>
+              <font name="JetBrains Mono" size="12" style="1"/>
+              <foreground color="-1"/>
+              <label value="firstStageButton"/>
+              <opaque value="false"/>
+              <preferredSize width="110" height="30"/>
+              <rolloverEnabled value="true"/>
+              <text value="firstStageButton"/>
+            </properties>
+          </component>
         </children>
       </grid>
       <grid id="3c0aa" binding="panelCenter" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
