@@ -27,11 +27,10 @@ public class NetChargeDiagram extends JPanel {
         YAxis.setVerticalTickLabels(true);
         this.add(chartPanel);
     }
-
     private XYDataset createDataset()
     {
         final XYSeries netCharge = new XYSeries( "netCharge" );
-        for(double i=0;i<=14;i+=0.5)
+        for(double i=0.0;i<=14;i+=0.5)
         {
             netCharge.add(i,protein.getNetCharge(i));
         }
