@@ -9,7 +9,7 @@ public class ApplicationWindow extends JFrame {
     private JPanel panelMain;
     private JPanel panelMenu;
     private JPanel panelHeader;
-    private JPanel panelCenter;
+    public JPanel panelCenter;
     private JTextField RNATextField;
     private JButton mainButton;
     private JButton openFileButton;
@@ -25,7 +25,12 @@ public class ApplicationWindow extends JFrame {
         applicationWindow.setContentPane(applicationWindow.panelMain);
         applicationWindow.setVisible(true);
         applicationWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        applicationWindow.setSize(1000, 900 );
+        applicationWindow.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        JScrollPane scrollFrame = new JScrollPane(applicationWindow.panelCenter);
+        applicationWindow.panelCenter.setAutoscrolls(true);
+        applicationWindow.panelCenter.setBackground(new Color(105, 220, 158));
+        scrollFrame.setPreferredSize(new Dimension( 800,300));
+        applicationWindow.add(scrollFrame);
     }
     public String getText() {
         return RNATextField.getText();

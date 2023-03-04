@@ -14,6 +14,7 @@ public class NetChargeDiagram extends JPanel {
     {
         this.protein = protein;
         JFreeChart netChargeDiagram = ChartFactory.createXYLineChart("Net Charge","pH","Net Charge",createDataset(),PlotOrientation.VERTICAL,false,true,false);
+        netChargeDiagram.setBackgroundPaint(new Color(105, 220, 158));
         ChartPanel chartPanel = new ChartPanel( netChargeDiagram );
         chartPanel.setPreferredSize( new java.awt.Dimension( 500 , 250 ) );
         this.setBackground(new Color(105, 220, 158));

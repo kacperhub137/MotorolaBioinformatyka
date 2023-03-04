@@ -11,7 +11,6 @@ public class Protein extends ProteinImage {
     private final double pH;
     private final int netChargeAtPH7;
     private final int polarity;
-    private final double molecularMass;
     private final double isoelectricPoint;
     private final HashMap<Character,Integer> formula;
     private int numberOfAtoms;
@@ -25,7 +24,6 @@ public class Protein extends ProteinImage {
         this.pH = calculateIndexpH();
         this.netChargeAtPH7 = calculateNetCharge(7);
         this.polarity = checkPolarity();
-        this.molecularMass = calculateMolecularMass();
         this.aminoAcidCounts = countAminoAcids();
         this.isoelectricPoint = calculateIsoelectricPoint();
         this.formula = createFormula();
@@ -72,8 +70,12 @@ public class Protein extends ProteinImage {
         return formula;
     }
 
-    public double getMolecularMass() {
-        return molecularMass;
+    public String getRNAString()
+    {
+        String RNAString = "";
+        for(AminoAcid aminoAcid : sequence)
+            RNAString += aminoAcid.getOneLetterCode();
+        return RNAString;
     }
 
     public double getIsoelectricPoint() {
@@ -133,14 +135,6 @@ public class Protein extends ProteinImage {
         return polarity;
     }
 
-    private double calculateMolecularMass() {
-        double molecularMass = 0.0;
-        for (AminoAcid aminoAcid : sequence) {
-            molecularMass += aminoAcid.getMolecularMass();
-        }
-        return molecularMass;
-    }
-
     private double calculateIsoelectricPoint() {
         double pH = 0.0,QN1,QN2,QN3,QN4,QN5,QP1,QP2,QP3,QP4,NQ;
         do {
@@ -163,9 +157,6 @@ public class Protein extends ProteinImage {
         for (AminoAcid aminoAcid : sequence) {
             int count = aminoAcidCounts.get(aminoAcid.getOneLetterCode());
             aminoAcidCounts.put(aminoAcid.getOneLetterCode(), count + 1);
-        }
-        for (HashMap.Entry<Character, Integer> entry : aminoAcidCounts.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
         }
         return aminoAcidCounts;
     }

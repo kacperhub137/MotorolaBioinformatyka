@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.util.HashMap;
 import org.jfree.chart.*;
 import org.jfree.data.general.DefaultPieDataset;
@@ -19,8 +20,11 @@ public class AtomsCompositionDiagram {
 
     private JPanel createDiagram()
     {
-        JFreeChart atomsCompositionDiagram = ChartFactory.createPieChart("Amino Acids Composition", createDataset(), false,true, false);
+        JFreeChart atomsCompositionDiagram = ChartFactory.createPieChart("Atoms Composition", createDataset(), false,true, false);
+        atomsCompositionDiagram.setBackgroundPaint(new Color(105, 220, 158));
+        atomsCompositionDiagram.getPlot().setBackgroundPaint(new Color(105, 220, 158));
         ChartPanel atomsCompositionPanel = new ChartPanel(atomsCompositionDiagram);
+        atomsCompositionPanel.setPreferredSize( new java.awt.Dimension( 350 , 350 ) );
         return atomsCompositionPanel;
     }
     private DefaultPieDataset createDataset()

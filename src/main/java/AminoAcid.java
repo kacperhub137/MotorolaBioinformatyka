@@ -37,14 +37,12 @@ public class AminoAcid extends AminoAcidsDetails {
     {
         return hydrophobicityValues.get(oneLetterCode);
     }
-    public Double getMolecularMass(){return aminoAcidMolecularMasses.get(oneLetterCode);}
     public Integer getPolarity(){return polarities.get(oneLetterCode);}
     public Integer getAmountOfCarbon() { return AminoAcidsDetails.amountOfCarbon.get(oneLetterCode); }
     public Integer getAmountOfHydrogen() { return AminoAcidsDetails.amountOfHydrogen.get(oneLetterCode); }
     public Integer getAmountOfNitrogen() { return AminoAcidsDetails.amountOfNitrogen.get(oneLetterCode); }
     public Integer getAmountOfOxygen() { return AminoAcidsDetails.amountOfOxygen.get(oneLetterCode); }
     static public HashMap<Character, Integer>getAminoAcidCount(){return aminoAcidCounts;}
-    public Double getExtinctionCoefficientValue(){return extinctionCoefficientValue.get(oneLetterCode);}
     public int getCharge(double pH)
     {
         if(pKa == 0 || pKa == pH) {return 0;}

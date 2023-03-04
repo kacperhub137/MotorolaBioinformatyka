@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
@@ -18,8 +19,7 @@ public class RNAListener implements ActionListener {
         {
             if(swapRNAToProteins())
             {
-                JOptionPane.showMessageDialog(window, "Znaleziono proteiny");
-                new ProteinsWindow(Proteins).setVisible(true);
+                showProteins();
             }else
             {
                 JOptionPane.showMessageDialog(window, "Nie znaleziono proteinów");
@@ -28,6 +28,17 @@ public class RNAListener implements ActionListener {
         {
             JOptionPane.showMessageDialog(window, "Niepoprawna sekwencja");
         }
+    }
+    private void showProteins()
+    {
+        JOptionPane.showMessageDialog(window, "Znaleziono proteiny");
+        window.panelCenter.setLayout(new BoxLayout(window.panelCenter,BoxLayout.Y_AXIS));
+        window.panelCenter.setAlignmentY(Component.LEFT_ALIGNMENT);
+        window.panelCenter.add(new ProteinsWindow(Proteins));
+        window.panelCenter.setBackground(new Color(105, 220, 158));
+        window.panelCenter.setVisible(true);
+        window.revalidate();
+        window.validate();
     }
     private boolean isRNA()
     {

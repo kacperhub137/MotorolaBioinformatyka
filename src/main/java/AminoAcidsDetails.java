@@ -109,29 +109,6 @@ public abstract class AminoAcidsDetails {
         polarities.put('W', 0);
         polarities.put('Y', 1);
     }
-    protected static final HashMap<Character, Double> aminoAcidMolecularMasses = new HashMap<>();
-    static {
-        aminoAcidMolecularMasses.put('A', 89.094);
-        aminoAcidMolecularMasses.put('C', 121.154);
-        aminoAcidMolecularMasses.put('D', 133.104);
-        aminoAcidMolecularMasses.put('E', 147.131);
-        aminoAcidMolecularMasses.put('F', 165.192);
-        aminoAcidMolecularMasses.put('G', 75.067);
-        aminoAcidMolecularMasses.put('H', 155.156);
-        aminoAcidMolecularMasses.put('I', 131.175);
-        aminoAcidMolecularMasses.put('K', 146.189);
-        aminoAcidMolecularMasses.put('L', 131.175);
-        aminoAcidMolecularMasses.put('M', 149.208);
-        aminoAcidMolecularMasses.put('N', 132.119);
-        aminoAcidMolecularMasses.put('P', 115.132);
-        aminoAcidMolecularMasses.put('Q', 146.146);
-        aminoAcidMolecularMasses.put('R', 174.203);
-        aminoAcidMolecularMasses.put('S', 105.093);
-        aminoAcidMolecularMasses.put('T', 119.119);
-        aminoAcidMolecularMasses.put('V', 117.148);
-        aminoAcidMolecularMasses.put('W', 204.228);
-        aminoAcidMolecularMasses.put('Y', 181.191);
-    }
     protected static final  HashMap<Character, Integer> aminoAcidCounts = new HashMap<>();
     static {
         aminoAcidCounts.put('A', 0);
@@ -154,29 +131,6 @@ public abstract class AminoAcidsDetails {
         aminoAcidCounts.put('V', 0);
         aminoAcidCounts.put('W', 0);
         aminoAcidCounts.put('Y', 0);
-    }
-    protected static final HashMap<Character, Double> extinctionCoefficientValue = new HashMap<Character, Double>();
-    static {
-        extinctionCoefficientValue.put('A', 5500.0);
-        extinctionCoefficientValue.put('C', 125.0);
-        extinctionCoefficientValue.put('D', 11500.0);
-        extinctionCoefficientValue.put('E', 9400.0);
-        extinctionCoefficientValue.put('F', 20500.0);
-        extinctionCoefficientValue.put('G', 1700.0);
-        extinctionCoefficientValue.put('H', 21600.0);
-        extinctionCoefficientValue.put('I', 8800.0);
-        extinctionCoefficientValue.put('K', 32500.0);
-        extinctionCoefficientValue.put('L', 8600.0);
-        extinctionCoefficientValue.put('M', 6800.0);
-        extinctionCoefficientValue.put('N', 5600.0);
-        extinctionCoefficientValue.put('P', 8700.0);
-        extinctionCoefficientValue.put('Q', 7600.0);
-        extinctionCoefficientValue.put('R', 12200.0);
-        extinctionCoefficientValue.put('S', 5700.0);
-        extinctionCoefficientValue.put('T', 8400.0);
-        extinctionCoefficientValue.put('V', 7000.0);
-        extinctionCoefficientValue.put('W', 22000.0);
-        extinctionCoefficientValue.put('Y', 14900.0);
     }
     protected static final HashMap<Character, Integer> amountOfCarbon = new HashMap<Character, Integer>();
     static {

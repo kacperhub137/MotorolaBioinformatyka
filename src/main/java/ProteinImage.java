@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 
 public abstract class ProteinImage {
@@ -14,6 +15,7 @@ public abstract class ProteinImage {
         addStartImage();
         addMiddleImages();
         addEndImage();
+        peptide.setBackground(new Color(105, 220, 158));
         return peptide;
     }
 
