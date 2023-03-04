@@ -1,4 +1,3 @@
-import com.sun.deploy.panel.JavaPanel;
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.plaf.FontUIResource;
@@ -29,8 +28,6 @@ public class ProteinInformationPanel extends JPanel {
     private JLabel setTitleLabel()
     {
         JLabel Title = label(new JLabel("Białko zamienione na aminokwasy: " +protein.getRNAString()));
-        Title.setMaximumSize(new Dimension(500,500));
-        Title.setMinimumSize(new Dimension(500,500));
         return Title;
     }
 

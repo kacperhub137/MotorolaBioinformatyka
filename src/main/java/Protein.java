@@ -61,7 +61,7 @@ public class Protein extends ProteinImage {
     {
         String empty = "";
         for (HashMap.Entry<Character, Integer> entry : formula.entrySet()) {
-            empty += entry.getKey() + "" + entry.getValue();
+            empty += entry.getKey() + "" + entry.getValue() + " ";
         }
         return empty;
     }
