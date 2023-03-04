@@ -2,11 +2,11 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ApplicationWindow">
   <grid id="27dc6" binding="panelMain" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="4" y="14" width="978" height="917"/>
+      <xy x="4" y="14" width="1278" height="889"/>
     </constraints>
     <properties>
       <doubleBuffered value="false"/>
-      <enabled value="false"/>
+      <enabled value="true"/>
       <preferredSize width="600" height="150"/>
     </properties>
     <border type="none"/>
@@ -63,6 +63,7 @@
             <constraints/>
             <properties>
               <actionCommand value=""/>
+              <alignmentY value="0.0"/>
               <background color="-14538708"/>
               <borderPainted value="true"/>
               <font name="JetBrains Mono" size="12" style="1"/>
@@ -78,6 +79,7 @@
             <constraints/>
             <properties>
               <actionCommand value=""/>
+              <alignmentY value="0.0"/>
               <background color="-14538708"/>
               <font name="JetBrains Mono" size="12" style="1"/>
               <foreground color="-1"/>
@@ -158,10 +160,11 @@
               </component>
             </children>
           </grid>
-          <component id="7f8eb" class="javax.swing.JButton" binding="firstStageButton">
+          <component id="45b63" class="javax.swing.JButton" binding="firstStageButton">
             <constraints/>
             <properties>
               <actionCommand value=""/>
+              <alignmentY value="0.0"/>
               <background color="-14538708"/>
               <font name="JetBrains Mono" size="12" style="1"/>
               <foreground color="-1"/>
@@ -170,6 +173,36 @@
               <preferredSize width="110" height="30"/>
               <rolloverEnabled value="true"/>
               <text value="firstStageButton"/>
+            </properties>
+          </component>
+          <component id="738bf" class="javax.swing.JButton" binding="secondStageButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <alignmentY value="0.0"/>
+              <background color="-14538708"/>
+              <font name="JetBrains Mono" size="12" style="1"/>
+              <foreground color="-1"/>
+              <label value="secondStageButton"/>
+              <opaque value="false"/>
+              <preferredSize width="110" height="30"/>
+              <rolloverEnabled value="true"/>
+              <text value="secondStageButton"/>
+            </properties>
+          </component>
+          <component id="c0e7e" class="javax.swing.JButton" binding="thirdStageButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <alignmentY value="0.0"/>
+              <background color="-14538708"/>
+              <font name="JetBrains Mono" size="12" style="1"/>
+              <foreground color="-1"/>
+              <label value="thirdStageButton"/>
+              <opaque value="false"/>
+              <preferredSize width="110" height="30"/>
+              <rolloverEnabled value="true"/>
+              <text value="thirdStageButton"/>
             </properties>
           </component>
         </children>
@@ -210,16 +243,17 @@
               <disabledTextColor color="-15987700"/>
               <doubleBuffered value="false"/>
               <editable value="true"/>
+              <enabled value="true"/>
               <focusCycleRoot value="false"/>
               <font name="JetBrains Mono" size="18" style="1"/>
               <foreground color="-15987700"/>
               <horizontalAlignment value="2"/>
-              <inheritsPopupMenu value="false"/>
-              <opaque value="false"/>
+              <inheritsPopupMenu value="true"/>
+              <opaque value="true"/>
               <preferredSize width="150" height="35"/>
-              <requestFocusEnabled value="false"/>
-              <selectedTextColor color="-16750849"/>
-              <selectionColor color="-16750849"/>
+              <requestFocusEnabled value="true"/>
+              <selectedTextColor color="-1"/>
+              <selectionColor color="-1"/>
               <text value="AUGAAAAAAAAAAAAAAAUAA"/>
               <verifyInputWhenFocusTarget value="true"/>
               <visible value="true"/>

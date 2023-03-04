@@ -20,12 +20,13 @@ public class ApplicationWindow extends JFrame {
     private JPanel menu3;
     private JLabel menuName;
     private JButton firstStageButton;
+    private JButton secondStageButton;
+    private JButton thirdStageButton;
     Color defaultColor, clickedColor;
     public ApplicationWindow() {
         JFileChooser openFileChooser = new JFileChooser();
         openFileChooser.setFileFilter(new FileNameExtensionFilter("TXT files", "txt"));
         this.mainButton.addActionListener(new RNAListener(this, firstStageButton));
-        this.firstStageButton.addActionListener(new RNAListener(this, firstStageButton));
         this.openFileButton.addActionListener(new OpenFIleButtonListener(RNATextField, openFileChooser, this));
         defaultColor = new Color(12 ,12 ,12);
         clickedColor = new Color(255,255,255);
@@ -70,7 +71,6 @@ public class ApplicationWindow extends JFrame {
         applicationWindow.setVisible(true);
         applicationWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         applicationWindow.setSize(1000, 900 );
-        //ApplicationWindow window =  new ApplicationWindow();
     }
     public String getText() {
         return RNATextField.getText();

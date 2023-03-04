@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="GUI changes">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="GUI cawdawdaawdwawd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Protein.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RNAListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RNAListener.java" afterDir="false" />
     </list>
     <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="Changes by kacper">
@@ -98,7 +98,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "324",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "246",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/kapik/IdeaProjects/MotorolaBioinformatyka/src/main/java",
     "node.js.detected.package.eslint": "true",
@@ -148,7 +148,10 @@
       <workItem from="1677323594821" duration="13298000" />
       <workItem from="1677522406951" duration="10405000" />
       <workItem from="1677703183802" duration="71000" />
-      <workItem from="1677703300093" duration="5972000" />
+      <workItem from="1677703300093" duration="6293000" />
+      <workItem from="1677922971895" duration="16000" />
+      <workItem from="1677923004235" duration="844000" />
+      <workItem from="1677953347998" duration="1292000" />
     </task>
     <task id="LOCAL-00001" summary="New version clean">
       <created>1673295100228</created>
@@ -199,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677150031132</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="GUI changes">
+      <created>1677709589873</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677709589873</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +234,8 @@
     <MESSAGE value="Img update" />
     <MESSAGE value="gui change" />
     <MESSAGE value="Proline new img, checkProteinPolarity function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proline new img, checkProteinPolarity function" />
+    <MESSAGE value="GUI changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI changes" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

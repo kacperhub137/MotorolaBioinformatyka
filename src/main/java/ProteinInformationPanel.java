@@ -17,15 +17,14 @@ public class ProteinInformationPanel extends JPanel {
         this.add(new JLabel("Polarity: " + protein.getPolarity()));
         this.add(new JLabel("Molecular mass: " + protein.getMolecularMass()));
         this.add(new JLabel("Isoelectric point: " + protein.getIsoelectricPoint()));
-        String a = "";
+        String empty = "";
         for (HashMap.Entry<Character, Integer> entry : protein.getAminoAcidCounts().entrySet()) {
-            a += entry.getKey() + ": " + entry.getValue();
+            empty += entry.getKey() + ": " + entry.getValue();
         }
-        this.add(new JLabel(a));
-        System.out.println("point: " + protein.getIsoelectricPoint());
+        this.add(new JLabel(empty));
         this.add(new NetChargeDiagram(protein));
         this.add(AminoAcidCompositionDiagram.createDiagram(protein));
-        this.add(new JLabel(protein.getFormula()));
+        //this.add(new JLabel(protein.getFormula()));
         this.add(AtomsCompositionDiagram.createDiagram(protein));
     }
 }

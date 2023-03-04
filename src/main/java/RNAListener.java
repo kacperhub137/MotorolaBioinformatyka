@@ -5,14 +5,12 @@ import java.util.ArrayList;
 
 public class RNAListener implements ActionListener {
     private final ApplicationWindow window;
-    private final JButton firstStageButton;
     private StringBuilder RNAsequence = new StringBuilder();
     private final ArrayList<AminoAcid>[] aminoAcids_sequence = new ArrayList[3];
     private final ArrayList<Protein> Proteins = new ArrayList<>();
     public RNAListener(ApplicationWindow window, JButton firstStageButton)
     {
         this.window = window;
-        this.firstStageButton = firstStageButton;
     }
     public void actionPerformed(ActionEvent event) {
         RNAsequence = new StringBuilder(window.getText().trim().toUpperCase().replace("T", "U"));
@@ -22,7 +20,6 @@ public class RNAListener implements ActionListener {
             {
                 JOptionPane.showMessageDialog(window, "Znaleziono proteiny");
                 new ProteinsWindow(Proteins).setVisible(true);
-                new FirstStageWindow(Proteins).setVisible(true);
             }else
             {
                 JOptionPane.showMessageDialog(window, "Nie znaleziono protein");

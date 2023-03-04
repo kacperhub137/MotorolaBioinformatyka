@@ -16,8 +16,6 @@ public class Protein extends ProteinImage {
     private final HashMap<Character,Integer> formula;
     private int numberOfAtoms;
     private final HashMap<Character,Integer> aminoAcidCounts;
-    //private final double extinctionCoefficient;
-    // private  final HashMap<Character, Integer> aminoAcidCounts = new HashMap<>();
     public Protein(ArrayList<AminoAcid> sequence) {
         super(sequence);
         this.sequence = new ArrayList<>(sequence);
@@ -63,11 +61,11 @@ public class Protein extends ProteinImage {
 
     public String getFormula()
     {
-        String a = "";
+        String empty = "";
         for (HashMap.Entry<Character, Integer> entry : formula.entrySet()) {
-            a += entry.getKey() + "" + entry.getValue();
+            empty += entry.getKey() + "" + entry.getValue();
         }
-        return a;
+        return empty;
     }
     public HashMap<Character,Integer> getFormulaAsHashMap()
     {
@@ -81,9 +79,6 @@ public class Protein extends ProteinImage {
     public double getIsoelectricPoint() {
         return isoelectricPoint;
     }
-    /*public double getExtinctionCoefficient(){
-        return extinctionCoefficient;
-    }*/
     public HashMap<Character,Integer> getAminoAcidCounts(){
         return aminoAcidCounts;
     }
@@ -173,11 +168,6 @@ public class Protein extends ProteinImage {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
         return aminoAcidCounts;
-    }
-    public Double calculateExtinctionCoefficientValue(){
-        double EC = 0.0;
-
-        return EC;
     }
     private HashMap<Character,Integer> createFormula()
     {
