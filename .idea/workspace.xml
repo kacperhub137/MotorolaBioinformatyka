@@ -4,16 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="GUI cawdawdaawdwawd">
+    <list default="true" id="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" name="Changes" comment="Cleaning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/PDown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/AminaAcidsChains/PUp.png" beforeDir="false" afterPath="$PROJECT_DIR$/Images/AminaAcidsChains/PUp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AminoAcidCompositionDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AminoAcidCompositionDiagram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationWindow.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Protein.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/RNAListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RNAListener.java" afterDir="false" />
     </list>
     <list id="dc777083-cdd8-43f1-b4d8-812667f510bf" name="Changes by kacper" comment="Changes by kacper">
+      <change beforePath="$PROJECT_DIR$/src/main/java/AminoAcid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AminoAcid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AminoAcidCompositionDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AminoAcidCompositionDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AminoAcidsDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AminoAcidsDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ApplicationWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ApplicationWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AtomsCompositionDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AtomsCompositionDiagram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Protein.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Protein.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProteinImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProteinImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProteinsWindow.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProteinsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProteinsWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RNAListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RNAListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +86,47 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/NetChargeDiagram.java">
+      <ranges>
+        <range start1="16" end1="16" start2="16" end2="17" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
+        <range start1="17" end1="18" start2="18" end2="20" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/RNAListener.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="1" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
+        <range start1="10" end1="11" start2="11" end2="12" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
+        <range start1="21" end1="22" start2="22" end2="29" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/ApplicationWindow.java">
+      <ranges>
+        <range start1="5" end1="5" start2="5" end2="6" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
+        <range start1="10" end1="11" start2="11" end2="12" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
+        <range start1="14" end1="25" start2="15" end2="16" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
+        <range start1="28" end1="29" start2="19" end2="20" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
+        <range start1="30" end1="66" start2="21" end2="21" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
+        <range start1="72" end1="73" start2="27" end2="33" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/ProteinInformationPanel.java">
+      <ranges>
+        <range start1="0" end1="0" start2="0" end2="1" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
+        <range start1="2" end1="2" start2="3" end2="4" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
+        <range start1="7" end1="7" start2="9" end2="10" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
+        <range start1="9" end1="28" start2="12" end2="15" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
+        <range start1="29" end1="29" start2="16" end2="89" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/AminoAcidCompositionDiagram.java">
+      <ranges>
+        <range start1="1" end1="1" start2="1" end2="2" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
+        <range start1="19" end1="19" start2="20" end2="22" changelist="dc777083-cdd8-43f1-b4d8-812667f510bf" />
+        <range start1="20" end1="20" start2="23" end2="24" changelist="6dbffa4d-e8c0-4c9c-8084-51b27e20c996" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -98,6 +153,9 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "254",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "246",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/kapik/IdeaProjects/MotorolaBioinformatyka/src/main/java",
@@ -117,6 +175,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\kapik\IdeaProjects\MotorolaBioinformatyka\src\main\java" />
       <recent name="$PROJECT_DIR$/Images/AminaAcidsChains" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kapik\IdeaProjects\MotorolaBioinformatyka\Images\AminaAcidsChains" />
     </key>
   </component>
   <component name="RunManager">
@@ -151,7 +212,7 @@
       <workItem from="1677703300093" duration="6293000" />
       <workItem from="1677922971895" duration="16000" />
       <workItem from="1677923004235" duration="844000" />
-      <workItem from="1677953347998" duration="1292000" />
+      <workItem from="1677953347998" duration="12715000" />
     </task>
     <task id="LOCAL-00001" summary="New version clean">
       <created>1673295100228</created>
@@ -209,7 +270,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677709589873</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Cleaning">
+      <created>1677954766916</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677954766916</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Changes by kacper">
+      <created>1677954778483</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677954778483</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +310,9 @@
     <MESSAGE value="gui change" />
     <MESSAGE value="Proline new img, checkProteinPolarity function" />
     <MESSAGE value="GUI changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI changes" />
+    <MESSAGE value="Cleaning" />
+    <MESSAGE value="Changes by kacper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by kacper" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

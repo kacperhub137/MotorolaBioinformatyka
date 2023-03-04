@@ -18,6 +18,7 @@ public class AminoAcidCompositionDiagram{
     {
         JFreeChart aminoAcidsCompositionDiagram = ChartFactory.createPieChart("Amino Acids Composition", createDataset(), false,true, false);
         ChartPanel aminoAcidsCompositionPanel = new ChartPanel(aminoAcidsCompositionDiagram);
+        aminoAcidsCompositionPanel.setPreferredSize( new java.awt.Dimension( 350 , 350 ) );
         return aminoAcidsCompositionPanel;
     }
     private PieDataset createDataset() {

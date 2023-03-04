@@ -8,7 +8,7 @@ public class RNAListener implements ActionListener {
     private StringBuilder RNAsequence = new StringBuilder();
     private final ArrayList<AminoAcid>[] aminoAcids_sequence = new ArrayList[3];
     private final ArrayList<Protein> Proteins = new ArrayList<>();
-    public RNAListener(ApplicationWindow window, JButton firstStageButton)
+    public RNAListener(ApplicationWindow window)
     {
         this.window = window;
     }
@@ -22,7 +22,7 @@ public class RNAListener implements ActionListener {
                 new ProteinsWindow(Proteins).setVisible(true);
             }else
             {
-                JOptionPane.showMessageDialog(window, "Nie znaleziono protein");
+                JOptionPane.showMessageDialog(window, "Nie znaleziono proteinów");
             }
         }else
         {
